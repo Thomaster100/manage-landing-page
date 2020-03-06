@@ -24,9 +24,7 @@ $line-height-tablet-desktop: 1.4;
 }
 
 body.-nav--opened {
-    -webkit-box-shadow: inset 0px -164px 10px -82px rgba(0,0,0,0.61);
-    -moz-box-shadow: inset 0px -164px 10px -82px rgba(0,0,0,0.61);
-    box-shadow: inset 0px -164px 10px -82px rgba(0,0,0,0.61);
+    box-shadow: inset 0px -140px 101px 0px rgba(0,0,0,0.95);
 }
 
 
@@ -39,16 +37,16 @@ body.-nav--opened {
 /* BACKGROUND */
 
 .container__tablet-bg {
-    width: 100%;
+    width: 150%;
     height: auto;
     position: absolute;
     z-index: -1;
 
     .img__tablet {
         width: 100%;
-        position: fixed;
-        top: -2rem;
-        right: -5rem;
+        position: relative;
+        // top: -3rem;
+        // right: -2rem; 
     }
 }
 
@@ -197,10 +195,10 @@ body.-nav--opened {
     .container__tablet-bg {
 
         .img__tablet {
-            width: 46rem;
-            position: fixed;
+            width: 30rem;
+            position: absolute;
             top: -10rem;
-            right: -2rem; 
+            right: -5rem; 
         }
     }
 

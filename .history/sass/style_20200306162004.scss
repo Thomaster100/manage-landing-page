@@ -24,9 +24,7 @@ $line-height-tablet-desktop: 1.4;
 }
 
 body.-nav--opened {
-    -webkit-box-shadow: inset 0px -164px 10px -82px rgba(0,0,0,0.61);
-    -moz-box-shadow: inset 0px -164px 10px -82px rgba(0,0,0,0.61);
-    box-shadow: inset 0px -164px 10px -82px rgba(0,0,0,0.61);
+    box-shadow: inset 0px -140px 101px 0px rgba(0,0,0,0.95);
 }
 
 
@@ -46,9 +44,9 @@ body.-nav--opened {
 
     .img__tablet {
         width: 100%;
-        position: fixed;
-        top: -2rem;
-        right: -5rem;
+        position: relative;
+        top: -3rem;
+        right: -2rem; 
     }
 }
 
@@ -197,10 +195,10 @@ body.-nav--opened {
     .container__tablet-bg {
 
         .img__tablet {
-            width: 46rem;
-            position: fixed;
+            width: 30rem;
+            position: absolute;
             top: -10rem;
-            right: -2rem; 
+            right: -5rem; 
         }
     }
 
@@ -283,11 +281,11 @@ body.-nav--opened {
 }
 
 @media screen and (min-width: 1440px) {
-    .wrapper {
-        width: 80%;
-        max-width: 1440px;
-        margin: 0 auto;
-     }
+    // .wrapper {
+    //     width: 80%;
+    //     max-width: 1440px;
+    //     margin: 0 auto;
+    //  }
 
      .container__presentation {
         margin-top: 5rem;
