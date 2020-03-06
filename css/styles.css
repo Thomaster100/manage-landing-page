@@ -272,16 +272,16 @@
     height: auto;
     margin: 0;
   }
-  .container__presentation .container__text-presentation {
+  .container__presentation .container__text_presentation {
     width: 26rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
-  .container__presentation .container__text-presentation h1, .container__presentation .container__text-presentation p {
+  .container__presentation .container__text_presentation h1, .container__presentation .container__text_presentation p {
     text-align: left;
   }
-  .container__presentation .container__text-presentation h1 {
+  .container__presentation .container__text_presentation h1 {
     font-size: 3rem;
     line-height: 1.2;
     padding-bottom: 2rem;
