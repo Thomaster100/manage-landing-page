@@ -10,10 +10,8 @@ html(lang ="en")
         link(rel="stylesheet", href="./../css/styles.css")
         link(href="https://fonts.googleapis.com/css?family=Be+Vietnam:400,500,700&display=swap" rel="stylesheet")
     body
-        // BACKGROUND TOP TABLET
         div.container__tablet-bg
             img.img__tablet(src="./../manage-landing-page-img-and-design/images/bg-tablet-pattern.svg" alt="")
-        // NAVIGATION
         div.wrapper.nav
             div.container__logo
                 img.nav__logo(src="./../manage-landing-page-img-and-design/images/logo.svg", alt="logo")
@@ -23,8 +21,7 @@ html(lang ="en")
             ul.block__items
                 each val in ["Pricing", "Product", "About Us", "Careers", "Community"]
                     li.nav__item= val
-            div.nav__cta Get Started
-        // PRESENTATION
+        div.nav__cta Get Started
         div.wrapper.container__presentation
             div.container__charts
                 img.pic_charts(src="./../manage-landing-page-img-and-design/images/illustration-intro.svg")
@@ -32,7 +29,6 @@ html(lang ="en")
                 h1 Bring everyone together to build better products.
                 p Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
                 div.presentation.cta Get Started
-        // ADVANTAGES
         div.wrapper.container__advantages
                 h2 What's different about Manage ?
                 p.  

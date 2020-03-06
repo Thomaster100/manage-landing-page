@@ -15,7 +15,7 @@ $line-height-tablet-desktop: 1.4;
     text-rendering: optimizeLegibility;
 }
 
-/* MOBILE - GENERAL */
+/* MOBILE */
 
 .html {
     font-size: $font-size-mobile;
@@ -26,24 +26,6 @@ $line-height-tablet-desktop: 1.4;
    width: 100%;
    max-width: 960px;
    margin: 0 auto;
-}
-
-.cta {
-    width: 7rem;
-    padding: 0.6rem 0;
-    font-size: 0.8rem;
-    font-weight: 700;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    color: #fff;
-    background-color: $bright-red;
-    box-shadow: 0px 6px 10px hsla(12, 88%, 59%, 0.65);
-    cursor: pointer;
-
-    &:hover {
-       background-color: hsla(12, 88%, 59%, 0.65);
-    }
-    
 }
 
 /* BACKGROUND */
@@ -174,22 +156,31 @@ $line-height-tablet-desktop: 1.4;
 
     p {
         color: $dark-grayish-blue;
-        line-height: 1.5;
+        line-height: 1.6;
     }
 }
 
-.presentation {
-    &.cta {
-        display: block;
-        margin: 2rem auto;
-    }
-}
+.cta {
+    width: 7rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: #fff;
+    background-color: $bright-red;
+    box-shadow: 0px 6px 10px hsla(12, 88%, 59%, 0.65);
+    cursor: pointer;
 
+    &:hover {
+       background-color: hsla(12, 88%, 59%, 0.65);
+    }
+    
+}
 
 /* BLOC ADVANTAGES */ 
 
 .container__advantages {
-    margin-top: 4rem;
+    margin-top: 8rem;
     margin-left: auto;
     margin-right: auto;
     h2 {
@@ -239,7 +230,7 @@ $line-height-tablet-desktop: 1.4;
         top: 2.3rem;
         justify-content:center;
         .nav__item {
-            padding: 0 1rem;
+            padding: 0 1.5rem;
         }
     }
 
@@ -269,36 +260,19 @@ $line-height-tablet-desktop: 1.4;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-           
-            h1, p {
-                text-align: left;
-            }
 
             h1 {
                 font-size: 3rem;
                 line-height: 1.2;
                 padding-bottom: 2rem;
             }
-
-            p {
-
-            }
         }
-
-        .presentation {
-            &.cta {
-                display: block;
-                margin: 2rem 0;
-            }
-        }
-
     }
 
     /* ADVANTAGES */ 
     .container__advantages {
-        margin-top: 5rem;
-        text-align: left;
-
+        margin-top: 8rem;
+    
         h2 {
             color: $dark-blue;
             width: 20rem;
@@ -308,7 +282,6 @@ $line-height-tablet-desktop: 1.4;
         p {
             width: 20rem;
             color: $dark-grayish-blue;
-            line-height: 1.5;
         }
     }
 

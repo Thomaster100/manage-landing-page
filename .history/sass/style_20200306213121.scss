@@ -174,7 +174,7 @@ $line-height-tablet-desktop: 1.4;
 
     p {
         color: $dark-grayish-blue;
-        line-height: 1.5;
+        line-height: 1.6;
     }
 }
 
@@ -239,7 +239,7 @@ $line-height-tablet-desktop: 1.4;
         top: 2.3rem;
         justify-content:center;
         .nav__item {
-            padding: 0 1rem;
+            padding: 0 1.5rem;
         }
     }
 
@@ -269,10 +269,7 @@ $line-height-tablet-desktop: 1.4;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-           
-            h1, p {
-                text-align: left;
-            }
+            text-align: left;
 
             h1 {
                 font-size: 3rem;
@@ -298,7 +295,7 @@ $line-height-tablet-desktop: 1.4;
     .container__advantages {
         margin-top: 5rem;
         text-align: left;
-
+        
         h2 {
             color: $dark-blue;
             width: 20rem;
@@ -308,7 +305,6 @@ $line-height-tablet-desktop: 1.4;
         p {
             width: 20rem;
             color: $dark-grayish-blue;
-            line-height: 1.5;
         }
     }
 
