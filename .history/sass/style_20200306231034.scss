@@ -47,7 +47,7 @@ $line-height-tablet-desktop: 1.4;
 
 /* BACKGROUND */
 
-.container__tablet_bg {
+.container__tablet-bg {
     width: 100%;
     height: auto;
     position: absolute;
@@ -161,7 +161,7 @@ $line-height-tablet-desktop: 1.4;
     }
 }
 
-.container__text_presentation {
+.container__text-presentation {
     text-align: center;
     line-height: 1.3;
     margin: auto;
@@ -193,11 +193,6 @@ $line-height-tablet-desktop: 1.4;
     margin-right: auto;
     display: block;
 
-    .container__differences-question {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
     h2 {
         color: $dark-blue;
         padding-bottom: 1.5rem;
@@ -217,41 +212,27 @@ $line-height-tablet-desktop: 1.4;
         top: -2rem;
         counter-reset: section;
 
-        .advantage_title {
+        .advantage-title {
             margin-bottom: 1rem;
-            margin-left: 3rem;
-
+            margin-left: 2rem;
+            // background-color: $dark-grayish-blue;
+            
             &:before {
                 counter-increment: section;
                 content: '0'counter(section);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 3em;
-                height: 1.5rem;
+                width: 2.5em;
+                height: 2.2rem;
                 position: relative;
                 text-align: center;
-                top: 1.5rem;
-                left: -3rem;   
+                top: 2rem;
+                right: 2rem;   
                 background: $bright-red;
                 border-radius: 20px;
                 color: #fff;
-                font-size: 0.8rem;
                 font-weight: 400;
-            }
-
-            &:after {   
-                content: '';
-                display: block;
-                width: 100%;
-                height: 1.5rem;
-                position: absolute;
-                top: 1.5rem;
-                left: 0;
-                border-top-left-radius: 20px;
-                border-bottom-left-radius: 20px;
-                z-index: -1;
-                background-color: $light-gray;
             }
 
             color: $dark-blue;
@@ -272,7 +253,7 @@ $line-height-tablet-desktop: 1.4;
         line-height: $line-height-tablet-desktop;
     }
     /* BACKGROUND */ 
-    .container__tablet_bg {
+    .container__tablet-bg {
 
         display: flex;
         justify-content: center;
@@ -353,12 +334,9 @@ $line-height-tablet-desktop: 1.4;
     /* ADVANTAGES */ 
     .container__advantages {
         margin-top: 5rem;
+        text-align: left;
         display: flex;
         justify-content: space-between;
-
-        .container__differences-question {
-            text-align: left;
-        }
 
         h2 {
             color: $dark-blue;
@@ -381,8 +359,7 @@ $line-height-tablet-desktop: 1.4;
                 margin-bottom: 2rem;
             }
 
-            .advantage_title {
-               margin-left: 0;
+            .advantage-title {
 
                 &:before {
                     counter-increment: section;
@@ -391,19 +368,15 @@ $line-height-tablet-desktop: 1.4;
                     justify-content: center;
                     align-items: center;
                     width: 3.5em;
-                    height: 2rem;
+                    height: 2.2rem;
                     position: relative;
                     text-align: center;
                     top: 2rem;
-                    right: 3.5rem;   
+                    right: 5rem;   
                     background: $bright-red;
                     border-radius: 20px;
                     color: #fff;
                     font-weight: 400;
-                }
-
-                &:after { 
-                    display: none;
                 }
 
                 color: $dark-blue;

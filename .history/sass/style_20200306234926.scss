@@ -251,7 +251,7 @@ $line-height-tablet-desktop: 1.4;
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
                 z-index: -1;
-                background-color: $light-gray;
+                background-color: beige;
             }
 
             color: $dark-blue;
@@ -400,10 +400,6 @@ $line-height-tablet-desktop: 1.4;
                     border-radius: 20px;
                     color: #fff;
                     font-weight: 400;
-                }
-
-                &:after { 
-                    display: none;
                 }
 
                 color: $dark-blue;
