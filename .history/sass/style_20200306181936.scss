@@ -177,15 +177,6 @@ $line-height-tablet-desktop: 1.4;
     
 }
 
-/* BLOC ADVANTAGES */ 
-
-.container__advantages {
-    margin-top: 8rem;
-
-    
-
-}
-
 /* MEDIA QUERIES */ 
 
 @media screen and (min-width: 768px) {
@@ -202,8 +193,8 @@ $line-height-tablet-desktop: 1.4;
 
         .img__tablet {
             width: 46rem;
-            top: -10rem;
-            left: 27rem;
+            top: -12rem;
+            right: 6rem;
         }
     }
 

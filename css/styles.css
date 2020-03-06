@@ -145,6 +145,11 @@
   background-color: rgba(242, 95, 58, 0.65);
 }
 
+/* BLOC ADVANTAGES */
+.container__advantages {
+  margin-top: 8rem;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
   .html {
@@ -158,8 +163,8 @@
   }
   .container__tablet-bg .img__tablet {
     width: 46rem;
-    top: -12rem;
-    left: 26rem;
+    top: -10rem;
+    left: 27rem;
   }
 
   .nav__logo {

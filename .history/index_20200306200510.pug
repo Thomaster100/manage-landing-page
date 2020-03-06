@@ -16,9 +16,9 @@ html(lang ="en")
             div.container__logo
                 img.nav__logo(src="./../manage-landing-page-img-and-design/images/logo.svg", alt="logo")
             div.container__hamburger
-                each line in ["", "", ""] 
-                    div.line= line
-            ul.block__items
+                each val in ["1", "2", "3"]
+                div.line= val
+            ul.block__items 
                  each val in ["Pricing", "Product", "About Us", "Careers", "Community"]
                     li.nav__item= val
             div.nav__cta Get Started

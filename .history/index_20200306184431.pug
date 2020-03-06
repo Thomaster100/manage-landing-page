@@ -16,11 +16,15 @@ html(lang ="en")
             div.container__logo
                 img.nav__logo(src="./../manage-landing-page-img-and-design/images/logo.svg", alt="logo")
             div.container__hamburger
-                each line in ["", "", ""] 
-                    div.line= line
+                div.line
+                div.line
+                div.line
             ul.block__items
-                 each val in ["Pricing", "Product", "About Us", "Careers", "Community"]
-                    li.nav__item= val
+                li.nav__item Pricing
+                li.nav__item Product
+                li.nav__item About Us
+                li.nav__item Careers
+                li.nav__item Community
             div.nav__cta Get Started
         div.wrapper.container__presentation
             div.container__charts
@@ -30,8 +34,9 @@ html(lang ="en")
                 p Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
         div.wrapper.container__advantages
             h2 What's different about Manage ?
-            p.  
-                Manage provides all the functionality your team needs, without 
-                the complexity. Our software is tailor-made for modern digital product teams.  
+            p   | Manage provides all the functionality your team needs, without 
+                | the complexity. Our software is tailor-made for modern digital 
+                
+  product teams.     
         script(src="./../js/main.js")
         
