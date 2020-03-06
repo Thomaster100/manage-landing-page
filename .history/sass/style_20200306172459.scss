@@ -20,7 +20,9 @@ $line-height-tablet-desktop: 1.4;
 .html {
     font-size: $font-size-mobile;
     line-height: 1.3;
+    
 }
+
 
 .wrapper {
    width: 100%;
@@ -35,13 +37,12 @@ $line-height-tablet-desktop: 1.4;
     height: auto;
     position: absolute;
     z-index: -1;
-    overflow-x: hidden;
 
     .img__tablet {
         width: 100%;
-        position: relative;
-        top: -5rem;
-        right: -4rem;
+        position: fixed;
+        top: -2rem;
+        right: -5rem;
     }
 }
 
@@ -145,6 +146,7 @@ $line-height-tablet-desktop: 1.4;
 }
 
 .container__text-presentation {
+
     text-align: center;
     line-height: 1.3;
     margin: auto;
@@ -192,9 +194,9 @@ $line-height-tablet-desktop: 1.4;
         justify-content: center;
 
         .img__tablet {
+            display: block;
             width: 46rem;
-            top: -12rem;
-            left: 26rem;
+            position: absolute;
         }
     }
 
@@ -209,34 +211,33 @@ $line-height-tablet-desktop: 1.4;
     .container__presentation {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 5rem;
 
         .container__charts {
             height: auto;
             position: relative;
-            top: 2rem;
             display: flex;
             justify-content: flex-end;
-        }
-
-        .pic_charts {
-            width: 100%;
-            height: auto;
-            margin: 0;
+            top: 2rem;
         }
 
         .container__text-presentation {
             width: 26rem;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: space-around;
+            text-align: left;
 
             h1 {
                 font-size: 3rem;
                 line-height: 1.2;
                 padding-bottom: 2rem;
             }
+        }
+
+        .pic_charts {
+            max-width: 90%;
         }
     }
 
@@ -251,6 +252,8 @@ $line-height-tablet-desktop: 1.4;
     }
 
 }
+
+
 
 @media screen and (min-width: 900px) {
 
@@ -276,9 +279,11 @@ $line-height-tablet-desktop: 1.4;
            background-color: hsla(12, 88%, 59%, 0.65);
         }
     }
+
+
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
 
      .container__presentation {
         margin-top: 5rem;

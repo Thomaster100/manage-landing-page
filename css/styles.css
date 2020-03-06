@@ -10,15 +10,9 @@
   line-height: 1.3;
 }
 
-body.-nav--opened {
-  -webkit-box-shadow: inset 0px -164px 10px -82px rgba(0, 0, 0, 0.61);
-  -moz-box-shadow: inset 0px -164px 10px -82px rgba(0, 0, 0, 0.61);
-  box-shadow: inset 0px -164px 10px -82px rgba(0, 0, 0, 0.61);
-}
-
 .wrapper {
   width: 100%;
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -28,12 +22,13 @@ body.-nav--opened {
   height: auto;
   position: absolute;
   z-index: -1;
+  overflow-x: hidden;
 }
 .container__tablet-bg .img__tablet {
   width: 100%;
-  position: fixed;
-  top: -2rem;
-  right: -5rem;
+  position: relative;
+  top: -5rem;
+  right: -4rem;
 }
 
 /* NAVIGATION */
@@ -157,11 +152,18 @@ body.-nav--opened {
     line-height: 1.4;
   }
 
+  .container__tablet-bg {
+    display: flex;
+    justify-content: center;
+  }
   .container__tablet-bg .img__tablet {
     width: 46rem;
-    position: fixed;
-    top: -10rem;
-    right: -2rem;
+    top: -12rem;
+    left: 26rem;
+  }
+
+  .nav__logo {
+    margin-left: 0;
   }
 
   .container__hamburger {
@@ -171,29 +173,31 @@ body.-nav--opened {
   .container__presentation {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 5rem;
   }
   .container__presentation .container__charts {
     height: auto;
     position: relative;
+    top: 2rem;
     display: flex;
     justify-content: flex-end;
-    top: 2rem;
+  }
+  .container__presentation .pic_charts {
+    width: 100%;
+    height: auto;
+    margin: 0;
   }
   .container__presentation .container__text-presentation {
     width: 26rem;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    justify-content: flex-end;
   }
   .container__presentation .container__text-presentation h1 {
     font-size: 3rem;
     line-height: 1.2;
     padding-bottom: 2rem;
-  }
-  .container__presentation .pic_charts {
-    max-width: 90%;
   }
 
   .block__items {
@@ -229,13 +233,7 @@ body.-nav--opened {
     background-color: rgba(242, 95, 58, 0.65);
   }
 }
-@media screen and (min-width: 1440px) {
-  .wrapper {
-    width: 80%;
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-
+@media screen and (min-width: 1200px) {
   .container__presentation {
     margin-top: 5rem;
   }
