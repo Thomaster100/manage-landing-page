@@ -323,10 +323,10 @@ $line-height-tablet-desktop: 1.4;
                     counter-increment: section;
                     content: '0'counter(section);
                     display: flex;
-                    justify-content: center;
+                    // justify-content: center;
                     align-items: center;
                     width: 3.5em;
-                    height: 2.2rem;
+                    height: 2rem;
                     position: relative;
                     text-align: center;
                     top: 2rem;
@@ -334,7 +334,6 @@ $line-height-tablet-desktop: 1.4;
                     background: $bright-red;
                     border-radius: 20px;
                     color: #fff;
-                    font-weight: 400;
                 }
 
                 color: $dark-blue;

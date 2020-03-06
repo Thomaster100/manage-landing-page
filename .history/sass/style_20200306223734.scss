@@ -42,7 +42,8 @@ $line-height-tablet-desktop: 1.4;
 
     &:hover {
        background-color: hsla(12, 88%, 59%, 0.65);
-    }   
+    }
+    
 }
 
 /* BACKGROUND */
@@ -287,6 +288,7 @@ $line-height-tablet-desktop: 1.4;
                 margin: 2rem 0;
             }
         }
+
     }
 
     /* ADVANTAGES */ 
@@ -309,9 +311,6 @@ $line-height-tablet-desktop: 1.4;
         }
 
         .container__list_of_advantages {
-            position: relative;
-            top: -2rem;
-            counter-reset: section;
 
             &:first-of-type, :nth-of-type(2) {
                 margin-bottom: 2rem;
@@ -320,28 +319,25 @@ $line-height-tablet-desktop: 1.4;
             .advantage-title {
 
                 &:before {
-                    counter-increment: section;
-                    content: '0'counter(section);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 3.5em;
-                    height: 2.2rem;
+                    content: '';
+                    display: block;
+                    width: 3em;
+                    height: 2rem;
                     position: relative;
-                    text-align: center;
-                    top: 2rem;
-                    right: 5rem;   
+                    top: 1.5rem;
+                    right: 4rem;   
                     background: $bright-red;
                     border-radius: 20px;
-                    color: #fff;
-                    font-weight: 400;
                 }
 
                 color: $dark-blue;
                 font-weight: 700;
             }
+
+
         }
     }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
