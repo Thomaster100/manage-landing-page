@@ -54,7 +54,7 @@ $line-height-tablet-desktop: 1.4;
     z-index: -1;
     overflow-x: hidden;
 
-    .img__tablet_top {
+    .img__tablet-top {
         width: 100%;
         position: relative;
         top: -5rem;
@@ -74,7 +74,7 @@ $line-height-tablet-desktop: 1.4;
         top: 29rem;
         z-index: -1;
 
-        .img__tablet_bottom {
+        .img__tablet-bottom {
             width: 20rem;
             position: relative;
             right: -5rem;
@@ -308,7 +308,7 @@ $line-height-tablet-desktop: 1.4;
         display: flex;
         justify-content: center;
         // height: 48rem;
-        .img__tablet_top {
+        .img__tablet-top {
             width: 46rem;
             top: -10rem;
             left: 27rem;
@@ -323,7 +323,7 @@ $line-height-tablet-desktop: 1.4;
             width: 100%;
             top: 55rem;
 
-            .img__tablet_bottom {
+            .img__tablet-bottom {
                 width: 46rem;
                 position: relative;
                 left: -41rem;
@@ -460,7 +460,7 @@ $line-height-tablet-desktop: 1.4;
         }
     }
 
-    .img__tablet_bottom {
+    .img__tablet-bottom {
         position: absolute;
         z-index: -1;
     }
