@@ -181,6 +181,7 @@
 .container__advantages .container__list_of_advantages .advantage_title {
   margin-bottom: 1rem;
   margin-left: 3rem;
+  position: relative;
   color: #242d52;
   font-weight: 700;
 }
