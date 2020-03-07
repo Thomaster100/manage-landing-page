@@ -248,11 +248,11 @@ $line-height-tablet-desktop: 1.4;
                 height: 1.5rem;
                 position: absolute;
                 top: 1.5rem;
-                left: -2rem;
+                left: 0;
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
                 z-index: -1;
-                background-color: $pale-red;
+                background-color: $light-gray;
             }
 
             color: $dark-blue;
@@ -395,7 +395,7 @@ $line-height-tablet-desktop: 1.4;
                     height: 2rem;
                     position: relative;
                     text-align: center;
-                    top: 1.9rem;
+                    top: 1.8rem;
                     left: -4rem;   
                     background: $bright-red;
                     border-radius: 20px;

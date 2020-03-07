@@ -210,11 +210,11 @@
   height: 1.5rem;
   position: absolute;
   top: 1.5rem;
-  left: 0;
+  left: -2rem;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   z-index: -1;
-  background-color: #fafafa;
+  background-color: #ffefeb;
 }
 
 /* MEDIA QUERIES */
@@ -334,7 +334,7 @@
     height: 2rem;
     position: relative;
     text-align: center;
-    top: 1.8rem;
+    top: 1.9rem;
     left: -4rem;
     background: #f25f3a;
     border-radius: 20px;
