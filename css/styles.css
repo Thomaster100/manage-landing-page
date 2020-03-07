@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* COLORS */
 :root {
   font-family: "Be Vietnam", sans-serif;
@@ -177,6 +178,7 @@
   margin-right: auto;
   display: block;
   position: relative;
+  line-height: 1.35;
 }
 .container__advantages .container__differences_question {
   text-align: center;
@@ -201,7 +203,7 @@
   color: #242d52;
   font-weight: 700;
 }
-.container__advantages .container__list_of_advantages .advantage_title:before {
+.container__advantages .container__list_of_advantages .advantage_title::before {
   counter-increment: section;
   content: "0" counter(section);
   display: flex;
@@ -219,7 +221,7 @@
   font-size: 0.8rem;
   font-weight: 400;
 }
-.container__advantages .container__list_of_advantages .advantage_title:after {
+.container__advantages .container__list_of_advantages .advantage_title::after {
   content: "";
   display: block;
   width: 100%;
@@ -273,6 +275,18 @@
   padding-bottom: 2rem;
   margin-bottom: 4rem;
   background-color: #fafafa;
+}
+.container__reviews .card__review .client__name {
+  padding: 0.5rem 0 1rem 0;
+}
+.container__reviews .card__review .text__review {
+  line-height: 1.35;
+}
+.container__reviews .card__review .text__review::before {
+  content: "“";
+}
+.container__reviews .card__review .text__review::after {
+  content: "”";
 }
 .container__reviews .client__name, .container__reviews .text__review {
   width: 90%;
@@ -383,9 +397,10 @@
 
   /* ADVANTAGES */
   .container__advantages {
-    margin-top: 5rem;
     display: flex;
     justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
   }
   .container__advantages .container__differences_question {
     text-align: left;
@@ -406,14 +421,14 @@
     counter-reset: section;
   }
   .container__advantages .container__list_of_advantages:first-of-type, .container__advantages .container__list_of_advantages :nth-of-type(2) {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
   .container__advantages .container__list_of_advantages .advantage_title {
     margin-left: 0;
     color: #242d52;
     font-weight: 700;
   }
-  .container__advantages .container__list_of_advantages .advantage_title:before {
+  .container__advantages .container__list_of_advantages .advantage_title::before {
     counter-increment: section;
     content: "0" counter(section);
     display: flex;
@@ -430,7 +445,7 @@
     color: #fff;
     font-weight: 400;
   }
-  .container__advantages .container__list_of_advantages .advantage_title:after {
+  .container__advantages .container__list_of_advantages .advantage_title::after {
     display: none;
   }
 
@@ -468,15 +483,17 @@
     margin-bottom: 4rem;
     background-color: #fafafa;
   }
-  .container__reviews .client__name, .container__reviews .text__review {
+  .container__reviews .card__review .client__name, .container__reviews .card__review .text__review {
     width: 90%;
     margin: 0 auto;
     text-align: center;
   }
-  .container__reviews .client__name {
+  .container__reviews .card__review .client__name {
+    padding: 0.5rem 0 1rem 0;
     color: #242d52;
   }
-  .container__reviews .text__review {
+  .container__reviews .card__review .text__review {
+    line-height: 1.5;
     color: #9095a7;
   }
 }

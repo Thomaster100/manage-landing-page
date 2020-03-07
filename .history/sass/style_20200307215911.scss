@@ -213,8 +213,7 @@ $line-height-tablet-desktop: 1.4;
     margin-right: auto;
     display: block;
     position: relative;
-    line-height: 1.35;
-    
+
     .container__differences_question {
         text-align: center;
         margin-bottom: 2rem;
@@ -240,7 +239,7 @@ $line-height-tablet-desktop: 1.4;
             margin-left: 3rem;
             position: relative;
 
-            &::before {
+            &:before {
                 counter-increment: section;
                 content: '0'counter(section);
                 display: flex;
@@ -259,7 +258,7 @@ $line-height-tablet-desktop: 1.4;
                 font-weight: 400;
             }
 
-            &::after {   
+            &:after {   
                 content: '';
                 display: block;
                 width: 100%;
@@ -328,12 +327,7 @@ $line-height-tablet-desktop: 1.4;
         margin-bottom: 4rem;
         background-color: $light-gray;
 
-        .client__name {
-            padding: 0.5rem 0 1rem 0; 
-        }
-
         .text__review {
-            line-height: 1.35;
             &::before {
                 content: "\201C"
             }
@@ -507,7 +501,7 @@ $line-height-tablet-desktop: 1.4;
             .advantage_title {
                margin-left: 0;
 
-                &::before {
+                &:before {
                     counter-increment: section;
                     content: '0'counter(section);
                     display: flex;
@@ -525,7 +519,7 @@ $line-height-tablet-desktop: 1.4;
                     font-weight: 400;
                 }
 
-                &::after { 
+                &:after { 
                     display: none;
                 }
 
@@ -562,6 +556,7 @@ $line-height-tablet-desktop: 1.4;
             display: block;
             margin: auto;
         }
+
     }
 
     .card__review {
@@ -573,22 +568,20 @@ $line-height-tablet-desktop: 1.4;
         padding-bottom: 2rem;
         margin-bottom: 4rem;
         background-color: $light-gray;
+    }
 
-        .client__name, .text__review {
-            width: 90%;
-            margin: 0 auto;
-            text-align: center;
-        }
+    .client__name, .text__review {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-        .client__name {
-            padding: 0.5rem 0 1rem 0;            color: $dark-blue;
-        }
-    
-        .text__review {
-            line-height: 1.5;
-            color: $dark-grayish-blue;
-        }
+    .client__name {
+        color: $dark-blue;
+    }
 
+    .text__review {
+        color: $dark-grayish-blue;
     }
 
   }

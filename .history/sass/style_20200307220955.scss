@@ -213,8 +213,7 @@ $line-height-tablet-desktop: 1.4;
     margin-right: auto;
     display: block;
     position: relative;
-    line-height: 1.35;
-    
+
     .container__differences_question {
         text-align: center;
         margin-bottom: 2rem;
@@ -328,12 +327,7 @@ $line-height-tablet-desktop: 1.4;
         margin-bottom: 4rem;
         background-color: $light-gray;
 
-        .client__name {
-            padding: 0.5rem 0 1rem 0; 
-        }
-
         .text__review {
-            line-height: 1.35;
             &::before {
                 content: "\201C"
             }
@@ -581,7 +575,7 @@ $line-height-tablet-desktop: 1.4;
         }
 
         .client__name {
-            padding: 0.5rem 0 1rem 0;            color: $dark-blue;
+            color: $dark-blue;
         }
     
         .text__review {
