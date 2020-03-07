@@ -75,8 +75,7 @@ $line-height-tablet-desktop: 1.4;
         z-index: -1;
 
         .img__tablet-bottom {
-            width: 15rem;
-            max-width: 20rem;
+            width: 70%;
             position: relative;
             right: -5rem;
         }
@@ -280,6 +279,11 @@ $line-height-tablet-desktop: 1.4;
             font-weight: 700;
         }
     }
+
+    .container__list_of_advantages { 
+    
+    }
+
 }
 
 
@@ -296,7 +300,7 @@ $line-height-tablet-desktop: 1.4;
 
         display: flex;
         justify-content: center;
-        // height: 48rem;
+
         .img__tablet-top {
             width: 46rem;
             top: -10rem;
@@ -308,12 +312,11 @@ $line-height-tablet-desktop: 1.4;
 
         .container__tablet_bottom {
             justify-content: flex-start;
-            
-
             .img__tablet-bottom {
                 width: 46rem;
-                position: absolute;
-                bottom: 0;
+                position: relative;
+                left: -25rem;
+                bottom: -5rem;
             }
 
         }
@@ -354,8 +357,8 @@ $line-height-tablet-desktop: 1.4;
         }
 
         .pic_charts {
-            width: 100%;
-            min-height: 320px;
+            width: 29rem;
+            height: 21rem;
             margin: 0;
         }
 
@@ -450,24 +453,6 @@ $line-height-tablet-desktop: 1.4;
     .img__tablet-bottom {
         position: absolute;
         z-index: -1;
-    }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-
-    .pic_charts{
-        width: 24rem;
-        height: 15rem;
-    }
-
-    .container__text_presentation {
-
-        h1 {
-            font-size: 2rem;
-            line-height: 1.2;
-            padding-bottom: 2rem;
-        }
     }
 
 }

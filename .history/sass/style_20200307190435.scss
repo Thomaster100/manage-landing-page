@@ -354,8 +354,8 @@ $line-height-tablet-desktop: 1.4;
         }
 
         .pic_charts {
-            width: 100%;
-            min-height: 320px;
+            width: 29rem;
+            height: 21rem;
             margin: 0;
         }
 
@@ -460,16 +460,6 @@ $line-height-tablet-desktop: 1.4;
         width: 24rem;
         height: 15rem;
     }
-
-    .container__text_presentation {
-
-        h1 {
-            font-size: 2rem;
-            line-height: 1.2;
-            padding-bottom: 2rem;
-        }
-    }
-
 }
 
 @media screen and (min-width: 900px) {

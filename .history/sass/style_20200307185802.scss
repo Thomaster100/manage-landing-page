@@ -75,8 +75,8 @@ $line-height-tablet-desktop: 1.4;
         z-index: -1;
 
         .img__tablet-bottom {
-            width: 15rem;
-            max-width: 20rem;
+            min-width: 10rem;
+            width: 20rem;
             position: relative;
             right: -5rem;
         }
@@ -354,8 +354,8 @@ $line-height-tablet-desktop: 1.4;
         }
 
         .pic_charts {
-            width: 100%;
-            min-height: 320px;
+            width: 29rem;
+            height: 21rem;
             margin: 0;
         }
 
@@ -450,24 +450,6 @@ $line-height-tablet-desktop: 1.4;
     .img__tablet-bottom {
         position: absolute;
         z-index: -1;
-    }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-
-    .pic_charts{
-        width: 24rem;
-        height: 15rem;
-    }
-
-    .container__text_presentation {
-
-        h1 {
-            font-size: 2rem;
-            line-height: 1.2;
-            padding-bottom: 2rem;
-        }
     }
 
 }
