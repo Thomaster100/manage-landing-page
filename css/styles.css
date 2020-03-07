@@ -40,7 +40,7 @@
   z-index: -1;
   overflow-x: hidden;
 }
-.container__tablet_bg .img__tablet {
+.container__tablet_bg .img__tablet-top {
   width: 100%;
   position: relative;
   top: -5rem;
@@ -229,7 +229,7 @@
     display: flex;
     justify-content: center;
   }
-  .container__tablet_bg .img__tablet {
+  .container__tablet_bg .img__tablet-top {
     width: 46rem;
     top: -10rem;
     left: 27rem;
@@ -343,6 +343,11 @@
   }
   .container__advantages .container__list_of_advantages .advantage_title:after {
     display: none;
+  }
+
+  .img__tablet-bottom {
+    position: absolute;
+    z-index: -1;
   }
 }
 @media screen and (min-width: 900px) {

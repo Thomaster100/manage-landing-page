@@ -54,7 +54,7 @@ $line-height-tablet-desktop: 1.4;
     z-index: -1;
     overflow-x: hidden;
 
-    .img__tablet-top {
+    .img__tablet {
         width: 100%;
         position: relative;
         top: -5rem;
@@ -278,7 +278,7 @@ $line-height-tablet-desktop: 1.4;
         display: flex;
         justify-content: center;
 
-        .img__tablet-top {
+        .img__tablet {
             width: 46rem;
             top: -10rem;
             left: 27rem;
@@ -412,12 +412,6 @@ $line-height-tablet-desktop: 1.4;
             }
         }
     }
-
-    .img__tablet-bottom {
-        position: absolute;
-        z-index: -1;
-    }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
