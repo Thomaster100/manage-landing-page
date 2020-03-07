@@ -237,9 +237,53 @@
 }
 
 /* REVIEWS */
+.container__reviews {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.container__reviews .container__cards {
+  display: flex;
+  flex-direction: column;
+}
 .container__reviews h2 {
   text-align: center;
   color: #242d52;
+  margin-bottom: 5rem;
+}
+.container__reviews .container__avatar {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  right: 0;
+}
+.container__reviews .container__avatar .avatar_client {
+  width: 5rem;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.container__reviews .card__review {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+  background-color: #fafafa;
+}
+.container__reviews .client__name, .container__reviews .text__review {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container__reviews .client__name {
+  color: #242d52;
+}
+.container__reviews .text__review {
+  color: #9095a7;
 }
 
 /* MEDIA QUERIES */
@@ -338,6 +382,7 @@
   }
   .container__advantages .container__differences-question {
     text-align: left;
+    margin-bottom: 2rem;
   }
   .container__advantages h2 {
     color: #242d52;
@@ -386,6 +431,55 @@
   .img__tablet_bottom {
     position: absolute;
     z-index: -1;
+  }
+
+  /* REVIEWS */
+  .container__reviews {
+    width: 100%;
+  }
+  .container__reviews .container__cards {
+    flex-direction: row;
+  }
+  .container__reviews h2 {
+    text-align: center;
+    color: #242d52;
+    margin-bottom: 5rem;
+  }
+  .container__reviews .container__avatar {
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    right: 0;
+  }
+  .container__reviews .container__avatar .avatar_client {
+    width: 5rem;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .container__reviews .card__review {
+    width: 24%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+    background-color: #fafafa;
+  }
+  .container__reviews .client__name, .container__reviews .text__review {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .container__reviews .client__name {
+    color: #242d52;
+  }
+  .container__reviews .text__review {
+    color: #9095a7;
+  }
+  .container__reviews .container__differences-question {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {

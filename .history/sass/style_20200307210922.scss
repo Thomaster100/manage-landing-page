@@ -457,7 +457,6 @@ $line-height-tablet-desktop: 1.4;
 
         .container__differences-question {
             text-align: left;
-            margin-bottom: 2rem;
         }
 
         h2 {
@@ -573,11 +572,8 @@ $line-height-tablet-desktop: 1.4;
         color: $dark-grayish-blue;
     }
 
-    .container__differences-question {
-        margin-bottom: 0;
-    }
+}
 
-  }
 
 }
 

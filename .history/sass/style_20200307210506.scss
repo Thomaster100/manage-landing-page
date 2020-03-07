@@ -289,11 +289,6 @@ $line-height-tablet-desktop: 1.4;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    
-    .container__cards {
-        display: flex;
-        flex-direction: column;
-    }
 
     h2 {
         text-align: center;
@@ -457,7 +452,6 @@ $line-height-tablet-desktop: 1.4;
 
         .container__differences-question {
             text-align: left;
-            margin-bottom: 2rem;
         }
 
         h2 {
@@ -523,7 +517,7 @@ $line-height-tablet-desktop: 1.4;
     width: 100%;
 
     .container__cards {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     h2 {
@@ -549,7 +543,7 @@ $line-height-tablet-desktop: 1.4;
     }
 
     .card__review {
-        width: 24%;
+        width: 25rem;
         height: auto;
         position: relative;
         margin: 0 auto;
@@ -573,11 +567,8 @@ $line-height-tablet-desktop: 1.4;
         color: $dark-grayish-blue;
     }
 
-    .container__differences-question {
-        margin-bottom: 0;
-    }
+}
 
-  }
 
 }
 
