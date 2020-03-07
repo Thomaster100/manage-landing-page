@@ -75,7 +75,8 @@ $line-height-tablet-desktop: 1.4;
         z-index: -1;
 
         .img__tablet-bottom {
-            width: 20rem;
+            width: 15rem;
+            max-width: 20rem;
             position: relative;
             right: -5rem;
         }
@@ -306,15 +307,13 @@ $line-height-tablet-desktop: 1.4;
     /* BACKGROUND TABLET BOTTOM */
 
         .container__tablet_bottom {
-            justify-content: center;
-            position: absolute;
-            width: 100%;
-            top: 55rem;
+            justify-content: flex-start;
+            max-width: unset;
 
             .img__tablet-bottom {
-                width: 46rem;
+                width: 100%;
                 position: relative;
-                left: -41rem;
+                left: 0;
             }
 
         }

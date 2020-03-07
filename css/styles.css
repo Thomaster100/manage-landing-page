@@ -59,8 +59,7 @@
   z-index: -1;
 }
 .container__tablet_bottom .img__tablet-bottom {
-  width: 15rem;
-  max-width: 20rem;
+  width: 20rem;
   position: relative;
   right: -5rem;
 }
@@ -256,12 +255,15 @@
 
   /* BACKGROUND TABLET BOTTOM */
   .container__tablet_bottom {
-    justify-content: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 55rem;
   }
   .container__tablet_bottom .img__tablet-bottom {
     width: 46rem;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    left: -41rem;
   }
 
   /* NAVIGATION */
