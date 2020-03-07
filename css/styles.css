@@ -285,6 +285,13 @@
 .container__reviews .text__review {
   color: #9095a7;
 }
+.container__reviews .btn__review {
+  text-align: center;
+}
+.container__reviews .btn__review.cta {
+  display: block;
+  margin: auto;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {

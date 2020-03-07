@@ -342,14 +342,6 @@ $line-height-tablet-desktop: 1.4;
         color: $dark-grayish-blue;
     }
 
-    .btn__review {
-        text-align: center;
-        &.cta {
-            display: block;
-            margin: auto;
-        }
-    }
-
 }
 
 
@@ -583,6 +575,15 @@ $line-height-tablet-desktop: 1.4;
 
     .container__differences-question {
         margin-bottom: 0;
+    }
+
+    .btn__review {
+        
+        &.cta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
   }
