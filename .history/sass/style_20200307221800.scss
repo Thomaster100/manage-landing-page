@@ -86,54 +86,50 @@ $line-height-tablet-desktop: 1.4;
 
 .nav {
     height: 5rem;
-    
+
     .container__logo {
         float: left;
     }
+}
 
-    .nav__logo {
-        display: inline-block;
-        padding: 2.5rem 0 0 0rem;
-        width: 7rem;
-        height: auto;
-        margin-left: 1.5rem;
-        cursor: pointer;
+
+.nav__logo {
+    display: inline-block;
+    padding: 2.5rem 0 0 0rem;
+    width: 7rem;
+    height: auto;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.container__hamburger {
+    width: 2rem;
+    float: right;
+    position: relative;
+    top: 2rem;
+    right: 1rem;
+    cursor: pointer;
+
+    .line {
+        width: 1.5rem;
+        height: 3px;
+        right: 0;
+        margin: 5px 0;
+        background-color: $dark-blue;
+        transition: all .100s ease-in-out;
+    } 
+    
+    &.--clicked .line:first-of-type {
+        transform: rotate(45deg) translate(4px, 6px);
     }
 
-    .container__hamburger {
-        width: 2rem;
-        float: right;
-        position: relative;
-        top: 2rem;
-        right: 1rem;
-        cursor: pointer;
-    
-        .line {
-            width: 1.5rem;
-            height: 3px;
-            right: 0;
-            margin: 5px 0;
-            background-color: $dark-blue;
-            transition: all .100s ease-in-out;
-        } 
-        
-        &.--clicked .line:first-of-type {
-            transform: rotate(45deg) translate(4px, 6px);
-        }
-    
-        &.--clicked .line:nth-of-type(2) {
-            background-color: transparent;
-        }
-    
-        &.--clicked .line:last-of-type {
-           transform: rotate(-45deg) translate(5px, -8px);
-        }
+    &.--clicked .line:nth-of-type(2) {
+        background-color: transparent;
     }
 
-    .nav__cta {
-        display: none;
+    &.--clicked .line:last-of-type {
+       transform: rotate(-45deg) translate(5px, -8px);
     }
-    
 }
 
 .block__items {
@@ -169,7 +165,9 @@ $line-height-tablet-desktop: 1.4;
     }
 }
 
-
+.nav__cta {
+    display: none;
+}
 
 /* BLOC PRESENTATION */
 
@@ -411,29 +409,24 @@ $line-height-tablet-desktop: 1.4;
 
 
     /* NAVIGATION */ 
-
-    .nav {
-
-        .nav__logo {
-            margin-left: 0;
-        }
-    
-        .container__hamburger {
-            display: none;
-        }
-    
-        .block__items {
-            display: flex;
-            position: relative;
-            top: 2.3rem;
-            justify-content:center;
-            .nav__item {
-                padding: 0 1rem;
-            }
-        }
-
+    .nav__logo {
+        margin-left: 0;
     }
-    
+
+    .container__hamburger {
+        display: none;
+    }
+
+    .block__items {
+        display: flex;
+        position: relative;
+        top: 2.3rem;
+        justify-content:center;
+        .nav__item {
+            padding: 0 1rem;
+        }
+    }
+
      /* PRESENTATION */ 
     .container__presentation {
         display: flex;
@@ -512,33 +505,34 @@ $line-height-tablet-desktop: 1.4;
                 margin-bottom: 0;
             }
 
-        .advantage_title {
-            margin-left: 0;
-            color: $dark-blue;
-            font-weight: 700;
+            .advantage_title {
+               margin-left: 0;
 
-            &::before {
-                counter-increment: section;
-                content: '0'counter(section);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 3.5em;
-                height: 2rem;
-                position: relative;
-                text-align: center;
-                top: 1.9rem;
-                left: -4rem;   
-                background: $bright-red;
-                border-radius: 20px;
-                color: #fff;
-                font-weight: 400;
+                &::before {
+                    counter-increment: section;
+                    content: '0'counter(section);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 3.5em;
+                    height: 2rem;
+                    position: relative;
+                    text-align: center;
+                    top: 1.9rem;
+                    left: -4rem;   
+                    background: $bright-red;
+                    border-radius: 20px;
+                    color: #fff;
+                    font-weight: 400;
+                }
+
+                &::after { 
+                    display: none;
+                }
+
+                color: $dark-blue;
+                font-weight: 700;
             }
-
-            &::after { 
-                display: none;
-            } 
-           }
         }
     }
 
@@ -588,8 +582,7 @@ $line-height-tablet-desktop: 1.4;
         }
 
         .client__name {
-            padding: 0.5rem 0 1rem 0;
-            color: $dark-blue;
+            padding: 0.5rem 0 1rem 0;            color: $dark-blue;
         }
     
         .text__review {

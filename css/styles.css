@@ -69,12 +69,10 @@
 .nav {
   height: 5rem;
 }
-
-.container__logo {
+.nav .container__logo {
   float: left;
 }
-
-.nav__logo {
+.nav .nav__logo {
   display: inline-block;
   padding: 2.5rem 0 0 0rem;
   width: 7rem;
@@ -82,8 +80,7 @@
   margin-left: 1.5rem;
   cursor: pointer;
 }
-
-.container__hamburger {
+.nav .container__hamburger {
   width: 2rem;
   float: right;
   position: relative;
@@ -91,7 +88,7 @@
   right: 1rem;
   cursor: pointer;
 }
-.container__hamburger .line {
+.nav .container__hamburger .line {
   width: 1.5rem;
   height: 3px;
   right: 0;
@@ -99,14 +96,17 @@
   background-color: #242d52;
   transition: all 0.1s ease-in-out;
 }
-.container__hamburger.--clicked .line:first-of-type {
+.nav .container__hamburger.--clicked .line:first-of-type {
   transform: rotate(45deg) translate(4px, 6px);
 }
-.container__hamburger.--clicked .line:nth-of-type(2) {
+.nav .container__hamburger.--clicked .line:nth-of-type(2) {
   background-color: transparent;
 }
-.container__hamburger.--clicked .line:last-of-type {
+.nav .container__hamburger.--clicked .line:last-of-type {
   transform: rotate(-45deg) translate(5px, -8px);
+}
+.nav .nav__cta {
+  display: none;
 }
 
 .block__items {
@@ -136,10 +136,6 @@
 }
 .block__items .nav__item:hover {
   color: #9095a7;
-}
-
-.nav__cta {
-  display: none;
 }
 
 /* BLOC PRESENTATION */
@@ -339,21 +335,19 @@
   }
 
   /* NAVIGATION */
-  .nav__logo {
+  .nav .nav__logo {
     margin-left: 0;
   }
-
-  .container__hamburger {
+  .nav .container__hamburger {
     display: none;
   }
-
-  .block__items {
+  .nav .block__items {
     display: flex;
     position: relative;
     top: 2.3rem;
     justify-content: center;
   }
-  .block__items .nav__item {
+  .nav .block__items .nav__item {
     padding: 0 1rem;
   }
 

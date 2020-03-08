@@ -512,33 +512,34 @@ $line-height-tablet-desktop: 1.4;
                 margin-bottom: 0;
             }
 
-        .advantage_title {
-            margin-left: 0;
-            color: $dark-blue;
-            font-weight: 700;
+            .advantage_title {
+               margin-left: 0;
 
-            &::before {
-                counter-increment: section;
-                content: '0'counter(section);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 3.5em;
-                height: 2rem;
-                position: relative;
-                text-align: center;
-                top: 1.9rem;
-                left: -4rem;   
-                background: $bright-red;
-                border-radius: 20px;
-                color: #fff;
-                font-weight: 400;
+                &::before {
+                    counter-increment: section;
+                    content: '0'counter(section);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 3.5em;
+                    height: 2rem;
+                    position: relative;
+                    text-align: center;
+                    top: 1.9rem;
+                    left: -4rem;   
+                    background: $bright-red;
+                    border-radius: 20px;
+                    color: #fff;
+                    font-weight: 400;
+                }
+
+                &::after { 
+                    display: none;
+                }
+
+                color: $dark-blue;
+                font-weight: 700;
             }
-
-            &::after { 
-                display: none;
-            } 
-           }
         }
     }
 
