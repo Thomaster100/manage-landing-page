@@ -46,9 +46,6 @@ $line-height-tablet-desktop: 1.4;
 }
 
 .cta_white {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 7rem;
     padding: 0.6rem 0;
     font-size: 0.8rem;
@@ -386,12 +383,7 @@ $line-height-tablet-desktop: 1.4;
             margin: auto;
         }
     }
-}
 
-// PRE FOOTER 
-
-.pre_footer {
-    padding: 4rem 0;
 }
 
 

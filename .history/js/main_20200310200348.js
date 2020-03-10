@@ -8,4 +8,10 @@ window.addEventListener("DOMContentLoaded", function () {
         hamburger.classList.toggle("--clicked");
         navItems.classList.toggle("--visible");
     })
+    const config = {
+        type: 'carousel',
+        perView: 3
+    }
+    new Glide(".glide").mount()
+
 });

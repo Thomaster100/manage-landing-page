@@ -28,7 +28,7 @@ $line-height-tablet-desktop: 1.4;
    margin: 0 auto;
 }
 
-.cta_red {
+.cta {
     width: 7rem;
     padding: 0.6rem 0;
     font-size: 0.8rem;
@@ -43,22 +43,6 @@ $line-height-tablet-desktop: 1.4;
     &:hover {
        background-color: hsla(12, 88%, 59%, 0.65);
     }   
-}
-
-.cta_white {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 7rem;
-    padding: 0.6rem 0;
-    font-size: 0.8rem;
-    font-weight: 700;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    color: $bright-red;
-    background-color: #fff;
-    box-shadow: 0px 6px 10px hsla(12, 88%, 59%, 0.65);
-    cursor: pointer;  
 }
 
 /* BACKGROUND TABLET TOP */
@@ -216,7 +200,7 @@ $line-height-tablet-desktop: 1.4;
 }
 
 .presentation {
-    &.cta_red {
+    &.cta {
         display: block;
         margin: 2rem auto;
     }
@@ -318,8 +302,8 @@ $line-height-tablet-desktop: 1.4;
     .container__cards {
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
         margin: 0 auto 0.5rem auto;
 
     }
@@ -381,17 +365,12 @@ $line-height-tablet-desktop: 1.4;
 
     .btn__review {
         text-align: center;
-        &.cta_red {
+        &.cta {
             display: block;
             margin: auto;
         }
     }
-}
 
-// PRE FOOTER 
-
-.pre_footer {
-    padding: 4rem 0;
 }
 
 
@@ -497,7 +476,7 @@ $line-height-tablet-desktop: 1.4;
         }
 
         .presentation {
-            &.cta_red {
+            &.cta {
                 display: block;
                 margin: 2rem 0;
             }

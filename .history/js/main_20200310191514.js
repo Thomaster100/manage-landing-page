@@ -8,4 +8,7 @@ window.addEventListener("DOMContentLoaded", function () {
         hamburger.classList.toggle("--clicked");
         navItems.classList.toggle("--visible");
     })
+
+    new Glide(".glide").mount()
+
 });

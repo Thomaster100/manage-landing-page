@@ -8,6 +8,7 @@ html(lang ="en")
         link(rel="stylesheet", href="./../css/normalize.css")
         link(rel="stylesheet", href="./../css/reset.css")
         link(rel="stylesheet", href="./../css/styles.css")
+        link(rel="stylesheet", href="./../manage-landing-page/glide-slider/glide-3.4.1/dist/css/glide.core.css")
         link(href="https://fonts.googleapis.com/css?family=Be+Vietnam:400,500,700&display=swap" rel="stylesheet")
     body
         // BACKGROUND TOP TABLET
@@ -31,7 +32,7 @@ html(lang ="en")
             .container__text_presentation
                 h1 Bring everyone together to build better products.
                 p Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
-                .presentation.cta_red Get Started
+                .presentation.cta Get Started
         // BACKGROUND TABLET BOTTOM        
         .container__tablet_bottom
             img.img__tablet_bottom(src="./../manage-landing-page-img-and-design/images/bg-tablet-pattern.svg" alt="")
@@ -61,46 +62,56 @@ html(lang ="en")
                                         Stop jumping from one service to another to communicate, store files, 
                                         track tasks and share documents. Manage offers an all-in-one team 
                                         productivity solution.
+
         // REVIEWS
-        .container__reviews
+        .container__reviews.glide
             h2 What they've said
-            .container__cards
-                .card__review
-                    .container__avatar
-                        img.avatar_client(src="./../manage-landing-page-img-and-design/images/avatar-anisha.png", alt="avatar")
-                    h3.client__name Anisha Li
-                    p.text__review.
-                        Manage has supercharged our teams workflow. The ability to maintain 
-                        visibility on larger milestones at all times keeps everyone motivated.
-                .card__review
-                    .container__avatar
-                        img.avatar_client(src="./../manage-landing-page-img-and-design/images/avatar-ali.png", alt="avatar")
-                    h3.client__name Ali Bravo
-                    p.text__review.
-                        We have been able to cancel so many other subscriptions since using 
-                        Manage. There is no more cross-channel confusion and everyone is much 
-                        more focused.
-                .card__review
-                    .container__avatar 
-                        img.avatar_client(src="./../manage-landing-page-img-and-design/images/avatar-richard.png", alt="avatar")
-                    h3.client__name Richard Watts
-                    p.text__review.
-                        Manage allows us to provide structure and process. It keeps us organized 
-                        and focused. I can't stop recommending them to everyone I talk to!
-                .card__review
-                    .container__avatar 
-                        img.avatar_client(src="./../manage-landing-page-img-and-design/images/avatar-shanai.png", alt="avatar")
-                    h3.client__name Shanai Gough
-                    p.text__review.
-                        Their software allows us to track, manage and collaborate on our projects 
-                        from anywhere. It keeps the whole team in-sync without being intrusive.
-            .btn__review.cta_red Get Started
+            .container__cards.glide__track(data-glide-el='track')
+                    ul.glide__slides
+                        li.glide__slide
+                            .card__review
+                                .container__avatar
+                                    img.avatar_client(src="./../manage-landing-page-img-and-design/images/avatar-anisha.png", alt="avatar")
+                                h3.client__name Anisha Li
+                                p.text__review.
+                                    Manage has supercharged our teams workflow. The ability to maintain 
+                                    visibility on larger milestones at all times keeps everyone motivated.
+                        li.glide__slide
+                            .card__review
+                                .container__avatar
+                                    img.avatar_client(src="./../manage-landing-page-img-and-design/images/avatar-ali.png", alt="avatar")
+                                h3.client__name Ali Bravo
+                                p.text__review.
+                                    We have been able to cancel so many other subscriptions since using 
+                                    Manage. There is no more cross-channel confusion and everyone is much 
+                                    more focused.
+                        li.glide__slide
+                            .card__review
+                                .container__avatar 
+                                    img.avatar_client(src="./../manage-landing-page-img-and-design/images/avatar-richard.png", alt="avatar")
+                                h3.client__name Richard Watts
+                                p.text__review.
+                                    Manage allows us to provide structure and process. It keeps us organized 
+                                    and focused. I can't stop recommending them to everyone I talk to!
+                        li.glide__slide
+                            .card__review
+                                .container__avatar 
+                                    img.avatar_client(src="./../manage-landing-page-img-and-design/images/avatar-shanai.png", alt="avatar")
+                                h3.client__name Shanai Gough
+                                p.text__review.
+                                    Their software allows us to track, manage and collaborate on our projects 
+                                    from anywhere. It keeps the whole team in-sync without being intrusive.
+        .glide__bullets(data-glide-el='controls[nav]')
+            button.glide__bullet(data-glide-dir='=0')
+            button.glide__bullet(data-glide-dir='=1')
+            button.glide__bullet(data-glide-dir='=2')
+            button.glide__bullet(data-glide-dir='=3')
 
-        // PRE-FOOTER
-        .pre_footer
-            h2.simplify Simplify how your team works today.
-            div.cta_white Get Started
-
+            .btn__review.cta Get Started
+        //- // PRE-FOOTER
+        //- .pre-footer
+        //-     p.
+        script(src="./../manage-landing-page/glide-slider/glide-3.4.1/dist/glide.js")
         script(src="./../js/main.js")
         
         
