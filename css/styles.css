@@ -241,26 +241,27 @@
   display: flex;
   flex-direction: column;
 }
-.container__reviews .container__cards {
-  display: flex;
-  flex-direction: column;
-}
 .container__reviews h2 {
   text-align: center;
   color: #242d52;
   margin-bottom: 5rem;
 }
-.container__reviews .container__avatar {
-  position: absolute;
-  top: -3rem;
-  left: 0;
-  right: 0;
-}
-.container__reviews .container__avatar .avatar_client {
-  width: 5rem;
+.container__reviews .container__cards {
   height: auto;
-  display: block;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0.5rem auto;
+}
+.container__reviews .container__cards .container__dots {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container__reviews .container__cards .container__dots .dot__prev, .container__reviews .container__cards .container__dots .dot__next {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 2px solid #f25f3a;
 }
 .container__reviews .card__review {
   width: 100%;
@@ -271,6 +272,18 @@
   padding-bottom: 2rem;
   margin-bottom: 4rem;
   background-color: #fafafa;
+}
+.container__reviews .card__review .container__avatar {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  right: 0;
+}
+.container__reviews .card__review .container__avatar .avatar_client {
+  width: 5rem;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 .container__reviews .card__review .client__name {
   padding: 0.5rem 0 1rem 0;
@@ -453,6 +466,7 @@
     width: 100%;
   }
   .container__reviews .container__cards {
+    margin: 0 auto 3rem auto;
     flex-direction: row;
   }
   .container__reviews .container__avatar {
@@ -474,7 +488,7 @@
     margin: 0 auto;
     padding-top: 3rem;
     padding-bottom: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 0;
     background-color: #fafafa;
   }
   .container__reviews .card__review .client__name, .container__reviews .card__review .text__review {

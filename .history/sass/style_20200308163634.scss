@@ -132,7 +132,8 @@ $line-height-tablet-desktop: 1.4;
 
     .nav__cta {
         display: none;
-    }  
+    }
+    
 }
 
 .block__items {
@@ -292,30 +293,39 @@ $line-height-tablet-desktop: 1.4;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    
+    .container__cards {
+        display: flex;
+        flex-direction: column;
+
+        &.slider {
+            overflow-x: hidden;
+            width: 100%;
+            height: 20rem;
+            border: 1px solid #000;
+        }
+    }
 
     h2 {
         text-align: center;
         color: $dark-blue;
         margin-bottom: 5rem;
     }
-    
-    .container__cards {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto 0.5rem auto;
 
-        .container__dots {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-                .dot__prev, .dot__next {
-                    width: 5rem;
-                    height: 5rem;
-                    border-radius: 50%;
-                    border: 2px solid $bright-red;       
-                }
+    .container__avatar {
+
+        position: absolute;
+        top: -3rem;
+        left: 0;
+        right: 0;
+
+        .avatar_client {
+            width: 5rem;
+            height: auto;
+            display: block;
+            margin: auto;
         }
+
     }
 
     .card__review {
@@ -327,22 +337,6 @@ $line-height-tablet-desktop: 1.4;
         padding-bottom: 2rem;
         margin-bottom: 4rem;
         background-color: $light-gray;
-
-        .container__avatar {
-        
-            position: absolute;
-            top: -3rem;
-            left: 0;
-            right: 0;
-    
-            .avatar_client {
-                width: 5rem;
-                height: auto;
-                display: block;
-                margin: auto;
-            }
-    
-        }
 
         .client__name {
             padding: 0.5rem 0 1rem 0; 
@@ -357,6 +351,7 @@ $line-height-tablet-desktop: 1.4;
                 content: "\201D"
             }
         }
+
     }
 
     .client__name, .text__review {
@@ -565,7 +560,6 @@ $line-height-tablet-desktop: 1.4;
     width: 100%;
 
     .container__cards {
-        margin: 0 auto 3rem auto;
         flex-direction: row;
     }
 
@@ -591,7 +585,7 @@ $line-height-tablet-desktop: 1.4;
         margin: 0 auto;
         padding-top: 3rem;
         padding-bottom: 2rem;
-        margin-bottom: 0;
+        margin-bottom: 4rem;
         background-color: $light-gray;
 
         .client__name, .text__review {
