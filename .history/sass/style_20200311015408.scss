@@ -393,7 +393,6 @@ $line-height-tablet-desktop: 1.4;
 .pre_footer {
     width: 100%;
     display: flex;
-    justify-content: center;
     position: relative;
     overflow: hidden;
     margin-top: 2rem;
@@ -668,7 +667,6 @@ $line-height-tablet-desktop: 1.4;
         }
 
         .pre_footer__content {
-            width: 100%;
             display: flex;
             justify-content: space-between;
         }

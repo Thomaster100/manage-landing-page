@@ -325,6 +325,7 @@
 .pre_footer {
   width: 100%;
   display: flex;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   margin-top: 2rem;
@@ -546,6 +547,11 @@
     content: url(../manage-landing-page-img-and-design/images/bg-simplify-section-desktop.svg);
     top: -5rem;
     text-align: right;
+  }
+  .pre_footer .pre_footer__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
   .pre_footer .simplify {
     text-align: left;
