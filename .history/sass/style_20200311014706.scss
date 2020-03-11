@@ -394,7 +394,7 @@ $line-height-tablet-desktop: 1.4;
     width: 100%;
     display: flex;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
     margin-top: 2rem;
     padding: 4rem 0;
     background-color: $bright-red;

@@ -394,7 +394,7 @@ $line-height-tablet-desktop: 1.4;
     width: 100%;
     display: flex;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
     margin-top: 2rem;
     padding: 4rem 0;
     background-color: $bright-red;
@@ -657,8 +657,8 @@ $line-height-tablet-desktop: 1.4;
     // PRE FOOTER 
 
     .pre_footer {
+
         &::before {
-            overflow: hidden;
             display: inline-block;
             margin: 0 auto;
             content: url(../manage-landing-page-img-and-design/images/bg-simplify-section-desktop.svg);
@@ -667,15 +667,9 @@ $line-height-tablet-desktop: 1.4;
         }
 
         .simplify {
-            text-align: left;
-            display: inline-block;
-            width: 19rem;
         }
 
         .cta_white {
-            text-align: center;
-            display: inline-block;
-            // right: 0;
         }
 
     }

@@ -391,33 +391,10 @@ $line-height-tablet-desktop: 1.4;
 // PRE FOOTER 
 
 .pre_footer {
-    width: 100%;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    margin-top: 2rem;
     padding: 4rem 0;
-    background-color: $bright-red;
-
-    &::before {
-        display: flex;
-        width: 100%;
-        content: url(../manage-landing-page-img-and-design/images/bg-simplify-section-mobile.svg);
-        position: absolute;
-        top: 0;
-        left: -3rem;
-    }
 
     .simplify {
-        width: 12rem;
-        text-align: center;
-        margin: auto;
-        color: #fff;
-        line-height: 1.3;
-    }
-
-    .cta_white {
-        margin: 1rem auto;
+        color: $dark-blue;
     }
 }
 
@@ -537,7 +514,6 @@ $line-height-tablet-desktop: 1.4;
         justify-content: space-between;
         margin-top: 5rem;
         margin-bottom: 3rem;
-
         .container__differences_question {
             text-align: left;
         }
@@ -653,35 +629,7 @@ $line-height-tablet-desktop: 1.4;
 
   }
 
-  
-    // PRE FOOTER 
-
-    .pre_footer {
-        &::before {
-            overflow: hidden;
-            display: inline-block;
-            margin: 0 auto;
-            content: url(../manage-landing-page-img-and-design/images/bg-simplify-section-desktop.svg);
-            top: -5rem;
-            text-align: right;
-        }
-
-        .simplify {
-            text-align: left;
-            display: inline-block;
-            width: 19rem;
-        }
-
-        .cta_white {
-            text-align: center;
-            display: inline-block;
-            // right: 0;
-        }
-
-    }
-
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
 

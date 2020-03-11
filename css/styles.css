@@ -323,7 +323,31 @@
 }
 
 .pre_footer {
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
   padding: 4rem 0;
+  background-color: #f25f3a;
+}
+.pre_footer::before {
+  display: flex;
+  width: 100%;
+  content: url(../manage-landing-page-img-and-design/images/bg-simplify-section-mobile.svg);
+  position: absolute;
+  top: 0;
+  left: -3rem;
+}
+.pre_footer .simplify {
+  width: 12rem;
+  text-align: center;
+  margin: auto;
+  color: #fff;
+  line-height: 1.3;
+}
+.pre_footer .cta_white {
+  margin: 1rem auto;
 }
 
 /* MEDIA QUERIES */
@@ -513,6 +537,24 @@
   .container__reviews .card__review .text__review {
     line-height: 1.5;
     color: #9095a7;
+  }
+
+  .pre_footer::before {
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto;
+    content: url(../manage-landing-page-img-and-design/images/bg-simplify-section-desktop.svg);
+    top: -5rem;
+    text-align: right;
+  }
+  .pre_footer .simplify {
+    text-align: left;
+    display: inline-block;
+    width: 19rem;
+  }
+  .pre_footer .cta_white {
+    text-align: center;
+    display: inline-block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
