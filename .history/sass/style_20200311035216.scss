@@ -462,7 +462,7 @@ $max-wrapper: 960px;
 
 /* MEDIA QUERIES */ 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
 
     .html {
         font-size: $font-size-tablet-desktop;
@@ -473,7 +473,7 @@ $max-wrapper: 960px;
 
         display: flex;
         justify-content: center;
-
+        // height: 48rem;
         .img__tablet_top {
             width: 46rem;
             top: -10rem;
@@ -538,6 +538,7 @@ $max-wrapper: 960px;
         }
 
         .pic_charts {
+            width: 30%;
             max-width: 85%;
             margin: 0;
         }
@@ -748,8 +749,13 @@ $max-wrapper: 960px;
 
 }
 
+// @media screen and (min-width: 769px) and (max-width: 1024px) {
+//     .pic_charts {
+//         width: 27rem;
+//     }
+// }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
 
     .nav {
 

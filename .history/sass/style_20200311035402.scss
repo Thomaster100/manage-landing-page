@@ -748,8 +748,13 @@ $max-wrapper: 960px;
 
 }
 
+// @media screen and (min-width: 769px) and (max-width: 1024px) {
+//     .pic_charts {
+//         width: 27rem;
+//     }
+// }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
 
     .nav {
 

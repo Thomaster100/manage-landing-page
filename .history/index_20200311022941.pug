@@ -21,8 +21,8 @@ html(lang ="en")
                 each line in ["", "", ""] 
                     .line= line
             ul.block__items
-                each item in ["Pricing", "Product", "About Us", "Careers", "Community"]
-                    li.nav__item= item
+                each val in ["Pricing", "Product", "About Us", "Careers", "Community"]
+                    li.nav__item= val
             .nav__cta Get Started
         // PRESENTATION
         .wrapper.container__presentation
@@ -98,28 +98,30 @@ html(lang ="en")
 
         // PRE-FOOTER
         .pre_footer
-            .pre_footer__content.wrapper
+            .pre_footer__content
                 h2.simplify Simplify how your team works today.
                 div.cta_white Get Started
         // FOOTER
         .footer
-            .footer___content_area.wrapper
-                .content_area__block
-                    img.footer__logo(src="./../manage-landing-page-img-and-design/images/logo.svg", alt="logo")
+            .wrapper
+                .footer__block
 
-                .content_area__block
-                    ul.block__items_nav
-                        each footer_item in ["Home", "Pricing", "Products", "About Us"]
-                            li= footer_item
-                .content_area__block
-                    ul.block__items_nav
-                        each footer_item_2 in ["Careers", "Community", "Privacy Policy"]
-                            li= footer_item_2
-                .content_area__block
+                .footer__block
+                    ul
+                        li Home
+                        li Pricing
+                        li Products
+                        li About Us 
+                .footer__block
+                    ul
+                        li Careers
+                        li Community
+                        li Privacy Policy
+                .footer__block
                     input(type="email", name="email", placeholder="Updates to your inbox...")
-                    .cta_red Go
-                .content_area__block
-                    p.footer__copy Copyright 2020. All Rights Reserved    
+
+                
+
         script(src="./../js/main.js")
     
         

@@ -109,17 +109,21 @@ html(lang ="en")
 
                 .content_area__block
                     ul.block__items_nav
-                        each footer_item in ["Home", "Pricing", "Products", "About Us"]
-                            li= footer_item
+                        each 
+                        //- li Home
+                        //- li Pricing
+                        //- li Products
+                        //- li About Us 
                 .content_area__block
                     ul.block__items_nav
-                        each footer_item_2 in ["Careers", "Community", "Privacy Policy"]
-                            li= footer_item_2
+                        li Careers
+                        li Community
+                        li Privacy Policy
                 .content_area__block
                     input(type="email", name="email", placeholder="Updates to your inbox...")
-                    .cta_red Go
-                .content_area__block
-                    p.footer__copy Copyright 2020. All Rights Reserved    
+
+                
+
         script(src="./../js/main.js")
     
         
