@@ -450,10 +450,9 @@ $max-wrapper: 960px;
 
         .footer___content_area {
             display: grid;
-            // grid-auto-flow: column;
+            grid-auto-flow: column;
 
             .container__social_icons {
-                // grid-area: container__social_icons;
                 display: flex;
                 justify-content: center; 
                 

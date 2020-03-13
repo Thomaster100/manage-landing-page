@@ -358,16 +358,23 @@
 }
 
 .footer {
+  display: grid;
+  grid-template-areas: "";
   color: #fff;
   background-color: #242d52;
   padding: 3rem 0;
 }
-.footer img {
-  background-color: #fff;
-}
 .footer .footer___content_area {
+  display: grid;
+}
+.footer .footer___content_area .container__social_icons {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+.footer .footer___content_area .container__social_icons .social_ico {
+  width: 4rem;
+  height: auto;
+  padding: 0 1rem;
 }
 /* MEDIA QUERIES */
 @media screen and (min-width: 900px) {

@@ -449,23 +449,14 @@ $max-wrapper: 960px;
         }
 
         .footer___content_area {
-            display: grid;
-            // grid-auto-flow: column;
-
-            .container__social_icons {
-                // grid-area: container__social_icons;
-                display: flex;
-                justify-content: center; 
-                
-                .social_ico {
-                    width: 4rem;
-                    height: auto;
-                    padding: 0 1rem;
-                }
-            }
-
+            display: flex;
+            flex-direction: column;
 
             .content_area__block {
+
+                .container__social_icons {
+                    display: flex;
+                }
 
                 .block__items_nav {}
 
