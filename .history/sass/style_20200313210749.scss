@@ -439,7 +439,7 @@ $max-wrapper: 960px;
 
     .footer {
         display: grid;
-        // grid-template-areas: "";
+        grid-template-areas: "";
         color: #fff;
         background-color: $dark-blue;
         padding: 3rem 0;
@@ -449,9 +449,13 @@ $max-wrapper: 960px;
         }
 
         .footer___content_area {
+            display: flex;
+            flex-direction: column;
 
             .container__social_icons {
                 display: flex;
+                justify-content: center; 
+                
                 .social_ico {
                     width: 6rem;
                     height: auto;
@@ -464,14 +468,10 @@ $max-wrapper: 960px;
             .content_area__block {
                 
                 &:nth-of-type(4) {
-                    display: flex;
-                    justify-content: center;
                     order: -1;
                 }
 
-                .block__items_nav {
-
-                }
+                .block__items_nav {}
 
             }
 

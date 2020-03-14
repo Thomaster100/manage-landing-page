@@ -359,22 +359,23 @@
 
 .footer {
   display: grid;
-  grid-template-areas: "";
   color: #fff;
   background-color: #242d52;
   padding: 3rem 0;
 }
-.footer .footer___content_area {
-  display: grid;
-}
 .footer .footer___content_area .container__social_icons {
   display: flex;
-  justify-content: center;
 }
 .footer .footer___content_area .container__social_icons .social_ico {
-  width: 4rem;
+  width: 6rem;
   height: auto;
   padding: 0 1rem;
+  cursor: pointer;
+}
+.footer .footer___content_area .content_area__block:nth-of-type(4) {
+  display: flex;
+  justify-content: center;
+  order: -1;
 }
 /* MEDIA QUERIES */
 @media screen and (min-width: 900px) {
