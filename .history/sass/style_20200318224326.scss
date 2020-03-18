@@ -463,13 +463,11 @@ $max-wrapper: 960px;
                     grid-area: logo-and-social-icons;
                 }
 
-                &:nth-of-type(2) { // NAV ITEMS 1
-                    color: $dark-grayish-blue; 
+                &:nth-of-type(2) { // NAV ITEMS 1 
                     grid-area: nav-items-1;
                 }
 
-                &:nth-of-type(3) { // NAV ITEMS 2
-                    color: $dark-grayish-blue; 
+                &:nth-of-type(3) { // NAV ITEMS 2 
                     grid-area: nav-items-2;
                 }
                 
@@ -478,7 +476,6 @@ $max-wrapper: 960px;
                 }
 
                 &:last-of-type { // COPYRIGHT
-                    color: $dark-grayish-blue;
                     text-align: center;
                     grid-area: copyright;
                 }

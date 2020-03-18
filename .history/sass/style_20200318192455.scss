@@ -446,48 +446,9 @@ $max-wrapper: 960px;
             // background-color: #fff;
         }
 
-        .footer___content_area {  
-
+        .footer___content_area {
             display: grid;
-            grid-template-areas:
-                    "newsletter newsletter newsletter newsletter"
-                    "nav-items-1 nav-items-1 nav-items-2 nav-items-2" 
-                    "logo-and-social-icons logo-and-social-icons logo-and-social-icons logo-and-social-icons" 
-                    "copyright copyright copyright copyright";
-
-            grid-template-rows: 100% 50% 100% 100%;
-
-            .content_area__block {
-
-                &:first-of-type { // LOGO AND SOCIAL ICONS
-                    grid-area: logo-and-social-icons;
-                }
-
-                &:nth-of-type(2) { // NAV ITEMS 1
-                    color: $dark-grayish-blue; 
-                    grid-area: nav-items-1;
-                }
-
-                &:nth-of-type(3) { // NAV ITEMS 2
-                    color: $dark-grayish-blue; 
-                    grid-area: nav-items-2;
-                }
-                
-                &:nth-of-type(4) { // NEWSLETTER
-                    grid-area: newsletter;
-                }
-
-                &:last-of-type { // COPYRIGHT
-                    color: $dark-grayish-blue;
-                    text-align: center;
-                    grid-area: copyright;
-                }
-
-                // .block__items_nav {
-
-                // }
-
-            }
+            // grid-template-areas: "";
 
             .container__social_icons {
                 display: flex;
@@ -497,6 +458,21 @@ $max-wrapper: 960px;
                     padding: 0 1rem;
                     cursor: pointer;
                 }
+            }
+
+
+            .content_area__block {
+                
+                &:nth-of-type(4) {
+                    display: flex;
+                    justify-content: center;
+                    order: -1;
+                }
+
+                .block__items_nav {
+
+                }
+
             }
 
         }
