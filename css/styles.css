@@ -366,34 +366,61 @@
   display: grid;
   grid-template-areas: "newsletter newsletter newsletter newsletter" "nav-items-1 nav-items-1 nav-items-2 nav-items-2" "logo-and-social-icons logo-and-social-icons logo-and-social-icons logo-and-social-icons" "copyright copyright copyright copyright";
   grid-template-rows: 100% 50% 100% 100%;
+  grid-gap: 3rem;
 }
 .footer .footer___content_area .content_area__block:first-of-type {
+  display: flex;
+  flex-direction: column-reverse;
   grid-area: logo-and-social-icons;
 }
+.footer .footer___content_area .content_area__block:first-of-type .footer__logo {
+  height: auto;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+.footer .footer___content_area .content_area__block:first-of-type .container__social_icons {
+  display: flex;
+  justify-content: center;
+}
+.footer .footer___content_area .content_area__block:first-of-type .container__social_icons .social_ico {
+  width: 6rem;
+  height: auto;
+  padding: 0 1rem;
+  cursor: pointer;
+}
 .footer .footer___content_area .content_area__block:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  line-height: 2;
   color: #9095a7;
   grid-area: nav-items-1;
 }
 .footer .footer___content_area .content_area__block:nth-of-type(3) {
+  display: flex;
+  justify-content: center;
+  line-height: 2;
   color: #9095a7;
   grid-area: nav-items-2;
 }
 .footer .footer___content_area .content_area__block:nth-of-type(4) {
+  display: flex;
+  justify-content: space-around;
   grid-area: newsletter;
+}
+.footer .footer___content_area .content_area__block:nth-of-type(4) input {
+  width: 65%;
+  border-radius: 20px;
+}
+.footer .footer___content_area .content_area__block:nth-of-type(4) .cta_red {
+  text-align: center;
+  width: 30%;
+  box-shadow: none;
 }
 .footer .footer___content_area .content_area__block:last-of-type {
   color: #9095a7;
   text-align: center;
   grid-area: copyright;
-}
-.footer .footer___content_area .container__social_icons {
-  display: flex;
-}
-.footer .footer___content_area .container__social_icons .social_ico {
-  width: 6rem;
-  height: auto;
-  padding: 0 1rem;
-  cursor: pointer;
 }
 
 /* MEDIA QUERIES */

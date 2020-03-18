@@ -463,6 +463,8 @@ $max-wrapper: 960px;
                 &:first-of-type { // LOGO AND SOCIAL ICONS
                     display: flex;
                     flex-direction: column-reverse;
+                    justify-content: center;
+                    text-align: center;
                     grid-area: logo-and-social-icons;
 
                     .footer__logo {
@@ -472,18 +474,6 @@ $max-wrapper: 960px;
                         padding: 0.5rem;
                         background-color: #fff;
                     }
-
-                    
-                .container__social_icons {
-                    display: flex;
-                    justify-content: center;
-                    .social_ico {
-                        width: 6rem;
-                        height: auto;
-                        padding: 0 1rem;
-                        cursor: pointer;
-                    }
-                }
 
                 }
 
@@ -532,6 +522,16 @@ $max-wrapper: 960px;
 
                 // }
             
+            }
+
+            .container__social_icons {
+                display: flex;
+                .social_ico {
+                    width: 6rem;
+                    height: auto;
+                    padding: 0 1rem;
+                    cursor: pointer;
+                }
             }
 
         }

@@ -463,41 +463,24 @@ $max-wrapper: 960px;
                 &:first-of-type { // LOGO AND SOCIAL ICONS
                     display: flex;
                     flex-direction: column-reverse;
+                    text-align: center;
                     grid-area: logo-and-social-icons;
 
                     .footer__logo {
                         // width: 12rem;
                         height: auto;
                         margin: 2rem auto;
-                        padding: 0.5rem;
-                        background-color: #fff;
                     }
-
-                    
-                .container__social_icons {
-                    display: flex;
-                    justify-content: center;
-                    .social_ico {
-                        width: 6rem;
-                        height: auto;
-                        padding: 0 1rem;
-                        cursor: pointer;
-                    }
-                }
 
                 }
 
                 &:nth-of-type(2) { // NAV ITEMS 1
-                    display: flex;
-                    justify-content: center;
                     line-height: 2;
                     color: $dark-grayish-blue; 
                     grid-area: nav-items-1;
                 }
 
                 &:nth-of-type(3) { // NAV ITEMS 2
-                    display: flex;
-                    justify-content: center;
                     line-height: 2;
                     color: $dark-grayish-blue; 
                     grid-area: nav-items-2;
@@ -506,7 +489,6 @@ $max-wrapper: 960px;
                 &:nth-of-type(4) { // NEWSLETTER
 
                     input {
-                        width: 65%;
                         border-radius: 20px;
                     }
 
@@ -515,9 +497,7 @@ $max-wrapper: 960px;
                     grid-area: newsletter;
 
                     .cta_red {
-                        text-align: center;
-                        width: 30%;
-                        box-shadow: none;
+                        width: 5rem;
                     }
 
                 }
@@ -532,6 +512,16 @@ $max-wrapper: 960px;
 
                 // }
             
+            }
+
+            .container__social_icons {
+                display: flex;
+                .social_ico {
+                    width: 6rem;
+                    height: auto;
+                    padding: 0 1rem;
+                    cursor: pointer;
+                }
             }
 
         }

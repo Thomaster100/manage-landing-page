@@ -463,6 +463,7 @@ $max-wrapper: 960px;
                 &:first-of-type { // LOGO AND SOCIAL ICONS
                     display: flex;
                     flex-direction: column-reverse;
+                    text-align: center;
                     grid-area: logo-and-social-icons;
 
                     .footer__logo {
@@ -473,31 +474,17 @@ $max-wrapper: 960px;
                         background-color: #fff;
                     }
 
-                    
-                .container__social_icons {
-                    display: flex;
-                    justify-content: center;
-                    .social_ico {
-                        width: 6rem;
-                        height: auto;
-                        padding: 0 1rem;
-                        cursor: pointer;
-                    }
-                }
-
                 }
 
                 &:nth-of-type(2) { // NAV ITEMS 1
-                    display: flex;
-                    justify-content: center;
+                    padding-left: 20%;
                     line-height: 2;
                     color: $dark-grayish-blue; 
                     grid-area: nav-items-1;
                 }
 
                 &:nth-of-type(3) { // NAV ITEMS 2
-                    display: flex;
-                    justify-content: center;
+                    padding-left: 20%;
                     line-height: 2;
                     color: $dark-grayish-blue; 
                     grid-area: nav-items-2;
@@ -506,7 +493,7 @@ $max-wrapper: 960px;
                 &:nth-of-type(4) { // NEWSLETTER
 
                     input {
-                        width: 65%;
+                        width: 15rem;
                         border-radius: 20px;
                     }
 
@@ -516,7 +503,7 @@ $max-wrapper: 960px;
 
                     .cta_red {
                         text-align: center;
-                        width: 30%;
+                        width: 5rem;
                         box-shadow: none;
                     }
 
@@ -532,6 +519,16 @@ $max-wrapper: 960px;
 
                 // }
             
+            }
+
+            .container__social_icons {
+                display: flex;
+                .social_ico {
+                    width: 6rem;
+                    height: auto;
+                    padding: 0 1rem;
+                    cursor: pointer;
+                }
             }
 
         }
