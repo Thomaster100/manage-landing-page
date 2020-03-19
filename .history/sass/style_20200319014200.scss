@@ -67,11 +67,11 @@ $max-wrapper: 960px;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 7rem;
     padding: 0.6rem 0;
     font-size: 0.8rem;
@@ -446,8 +446,8 @@ $max-wrapper: 960px;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
     overflow: hidden;
     margin-top: 10rem;
@@ -502,7 +502,8 @@ $max-wrapper: 960px;
                     "copyright copyright copyright copyright";
 
             -ms-grid-rows: 100% 50% 100% 100%;
-            grid-template-rows: 100% 50% 100% 100%;
+
+                grid-template-rows: 100% 50% 100% 100%;
             grid-gap: 3rem;
 
             .content_area__block {
