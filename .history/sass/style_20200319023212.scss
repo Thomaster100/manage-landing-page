@@ -154,7 +154,7 @@ $max-wrapper: 960px;
 
 .block__items {
 	display: none;
-	&.visible {
+	&.--visible {
 		display: flex;
 		flex-direction: column;
 		position: absolute;

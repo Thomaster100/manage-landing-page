@@ -120,13 +120,13 @@
   background-color: #242d52;
   transition: all 0.1s ease-in-out;
 }
-.nav .container__hamburger.--clicked .line:first-of-type {
+.nav .container__hamburger.clicked .line:first-of-type {
   transform: rotate(45deg) translate(4px, 6px);
 }
-.nav .container__hamburger.--clicked .line:nth-of-type(2) {
+.nav .container__hamburger.clicked .line:nth-of-type(2) {
   background-color: transparent;
 }
-.nav .container__hamburger.--clicked .line:last-of-type {
+.nav .container__hamburger.clicked .line:last-of-type {
   transform: rotate(-45deg) translate(5px, -8px);
 }
 .nav .nav__cta {
@@ -136,7 +136,7 @@
 .block__items {
   display: none;
 }
-.block__items.--visible {
+.block__items.visible {
   display: flex;
   flex-direction: column;
   position: absolute;
