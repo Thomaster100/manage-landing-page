@@ -1,2 +1,2 @@
 # manage-landing-page
-A simple landing page using Pug.js, SCSS and JavaScript - in progress
+A simple landing page using Pug.js, SCSS and JavaScript 
