@@ -47,7 +47,7 @@ input,
 textarea,
 select,
 button {
-  /* color: inherit; */
+  color: inherit;
   font: inherit;
   letter-spacing: inherit;
 }

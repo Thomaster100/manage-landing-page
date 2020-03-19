@@ -885,6 +885,7 @@ $max-wrapper: 960px;
                 }
 
                 &:nth-of-type(2) { // NAV ITEMS 1
+                    justify-content: flex-start;
                     grid-area: nav-items-1;
                 }
 

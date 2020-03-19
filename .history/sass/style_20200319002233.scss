@@ -508,11 +508,6 @@ $max-wrapper: 960px;
                     input {
                         width: 65%;
                         border-radius: 20px;
-
-                        &::placeholder  {
-                            font-size: 0.8rem;
-                            padding-left: 5rem;
-                        }
                     }
 
                     display: flex;
@@ -531,10 +526,6 @@ $max-wrapper: 960px;
                     color: $dark-grayish-blue;
                     text-align: center;
                     grid-area: copyright;
-
-                    .footer__copy {
-                        font-size: 1rem;
-                    }
                 }
 
                 .nav__footer_item {
@@ -605,33 +596,6 @@ $max-wrapper: 960px;
             .nav__item {
                 padding: 0 1rem;
             }
-        }
-
-        .nav__cta {
-            width: 7rem;
-            position: relative;
-            display: flex;
-            justify-content:center;
-            align-items: center;
-            top: 0.85rem;
-            float: right;
-            padding: 0.6rem 0;
-            font-size: 0.8rem;
-            font-weight: 700;
-            border: 1px solid transparent;
-            border-radius: 20px;
-            color: #fff;
-            background-color: $bright-red;
-            box-shadow: 0px 6px 10px hsla(12, 88%, 59%, 0.65);
-            cursor: pointer;
-    
-            &:hover {
-               background-color: hsla(12, 88%, 59%, 0.65);
-            }
-        }
-
-        .nav__item {
-            font-size: 0.9rem;
         }
 
     }
@@ -850,10 +814,10 @@ $max-wrapper: 960px;
         .footer___content_area {
 
             grid-template-areas:
-            "logo-and-social-icons nav-items-1 nav-items-2 newsletter"
-            ". . . copyright";
-            grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
-            grid-gap: 1rem;
+            "logo-and-social-icons nav-items-1 nav-items-2 newsletter";
+            grid-template-columns: auto;
+
+            grid-gap: 0;
 
             .content_area__block {
 
@@ -863,7 +827,7 @@ $max-wrapper: 960px;
 
                     .footer__logo {
                         height: auto;
-                        margin: 0 auto;
+                        margin: 2rem auto;
                         padding: 0.5rem;
                         background-color: #fff;
                     }
@@ -872,8 +836,6 @@ $max-wrapper: 960px;
                 .container__social_icons {
                     display: flex;
                     justify-content: center;
-                    position: relative;
-                    top: 6.6rem;
                     .social_ico {
                         width: 6rem;
                         height: auto;
@@ -895,7 +857,7 @@ $max-wrapper: 960px;
                 &:nth-of-type(4) { // NEWSLETTER
 
                     input {
-                        height: 2.5rem;
+                        width: 65%;
                         border-radius: 20px;
                     }
 
@@ -904,7 +866,8 @@ $max-wrapper: 960px;
                     grid-area: newsletter;
 
                     .cta_red {
-                        height: 2.5rem;
+                        text-align: center;
+                        width: 30%;
                         box-shadow: none;
                     }
 
@@ -914,10 +877,6 @@ $max-wrapper: 960px;
                     color: $dark-grayish-blue;
                     text-align: center;
                     grid-area: copyright;
-                    
-                    .footer__copy {
-                        font-size: 0.9rem;
-                    }
                 }
 
             }
@@ -927,6 +886,40 @@ $max-wrapper: 960px;
 
 }
 
+
+@media screen and (min-width: 768px) {
+
+    .nav {
+
+        .nav__cta {
+            width: 7rem;
+            position: relative;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            top: 0.85rem;
+            float: right;
+            padding: 0.6rem 0;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            color: #fff;
+            background-color: $bright-red;
+            box-shadow: 0px 6px 10px hsla(12, 88%, 59%, 0.65);
+            cursor: pointer;
+    
+            &:hover {
+               background-color: hsla(12, 88%, 59%, 0.65);
+            }
+        }
+
+        .nav__item {
+            font-size: 0.9rem;
+        }
+
+    }    
+}
 
 @media screen and (min-width: 1200px) {
 

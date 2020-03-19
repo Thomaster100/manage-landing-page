@@ -531,10 +531,6 @@ $max-wrapper: 960px;
                     color: $dark-grayish-blue;
                     text-align: center;
                     grid-area: copyright;
-
-                    .footer__copy {
-                        font-size: 1rem;
-                    }
                 }
 
                 .nav__footer_item {
@@ -873,7 +869,7 @@ $max-wrapper: 960px;
                     display: flex;
                     justify-content: center;
                     position: relative;
-                    top: 6.6rem;
+                    top: 6rem;
                     .social_ico {
                         width: 6rem;
                         height: auto;
@@ -914,10 +910,6 @@ $max-wrapper: 960px;
                     color: $dark-grayish-blue;
                     text-align: center;
                     grid-area: copyright;
-                    
-                    .footer__copy {
-                        font-size: 0.9rem;
-                    }
                 }
 
             }

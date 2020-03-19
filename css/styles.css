@@ -393,14 +393,14 @@
   display: flex;
   justify-content: center;
   line-height: 2;
-  color: #9095a7;
+  color: #fff;
   grid-area: nav-items-1;
 }
 .footer .footer___content_area .content_area__block:nth-of-type(3) {
   display: flex;
   justify-content: center;
   line-height: 2;
-  color: #9095a7;
+  color: #fff;
   grid-area: nav-items-2;
 }
 .footer .footer___content_area .content_area__block:nth-of-type(4) {
@@ -412,6 +412,10 @@
   width: 65%;
   border-radius: 20px;
 }
+.footer .footer___content_area .content_area__block:nth-of-type(4) input::placeholder {
+  font-size: 0.8rem;
+  padding-left: 5rem;
+}
 .footer .footer___content_area .content_area__block:nth-of-type(4) .cta_red {
   text-align: center;
   width: 30%;
@@ -421,6 +425,12 @@
   color: #9095a7;
   text-align: center;
   grid-area: copyright;
+}
+.footer .footer___content_area .content_area__block:last-of-type .footer__copy {
+  font-size: 1rem;
+}
+.footer .footer___content_area .content_area__block .nav__footer_item {
+  cursor: pointer;
 }
 
 /* MEDIA QUERIES */
@@ -469,6 +479,30 @@
   }
   .nav .block__items .nav__item {
     padding: 0 1rem;
+  }
+  .nav .nav__cta {
+    width: 7rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0.85rem;
+    float: right;
+    padding: 0.6rem 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #f25f3a;
+    box-shadow: 0px 6px 10px rgba(242, 95, 58, 0.65);
+    cursor: pointer;
+  }
+  .nav .nav__cta:hover {
+    background-color: rgba(242, 95, 58, 0.65);
+  }
+  .nav .nav__item {
+    font-size: 0.9rem;
   }
 
   /* PRESENTATION */
@@ -638,30 +672,59 @@
     text-align: center;
     display: inline-block;
   }
-}
-@media screen and (min-width: 768px) {
-  .nav .nav__cta {
-    width: 7rem;
-    position: relative;
+
+  .footer .footer___content_area {
+    grid-template-areas: "logo-and-social-icons nav-items-1 nav-items-2 newsletter" ". . . copyright";
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    grid-gap: 1rem;
+  }
+  .footer .footer___content_area .content_area__block:first-of-type {
+    flex-direction: column;
+    grid-area: logo-and-social-icons;
+  }
+  .footer .footer___content_area .content_area__block:first-of-type .footer__logo {
+    height: auto;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: #fff;
+  }
+  .footer .footer___content_area .content_area__block:first-of-type .container__social_icons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    top: 0.85rem;
-    float: right;
-    padding: 0.6rem 0;
-    font-size: 0.8rem;
-    font-weight: 700;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    color: #fff;
-    background-color: #f25f3a;
-    box-shadow: 0px 6px 10px rgba(242, 95, 58, 0.65);
+    position: relative;
+    top: 6.6rem;
+  }
+  .footer .footer___content_area .content_area__block:first-of-type .container__social_icons .social_ico {
+    width: 6rem;
+    height: auto;
+    padding: 0 1rem;
     cursor: pointer;
   }
-  .nav .nav__cta:hover {
-    background-color: rgba(242, 95, 58, 0.65);
+  .footer .footer___content_area .content_area__block:nth-of-type(2) {
+    grid-area: nav-items-1;
   }
-  .nav .nav__item {
+  .footer .footer___content_area .content_area__block:nth-of-type(3) {
+    grid-area: nav-items-2;
+  }
+  .footer .footer___content_area .content_area__block:nth-of-type(4) {
+    display: flex;
+    justify-content: space-around;
+    grid-area: newsletter;
+  }
+  .footer .footer___content_area .content_area__block:nth-of-type(4) input {
+    height: 2.5rem;
+    border-radius: 20px;
+  }
+  .footer .footer___content_area .content_area__block:nth-of-type(4) .cta_red {
+    height: 2.5rem;
+    box-shadow: none;
+  }
+  .footer .footer___content_area .content_area__block:last-of-type {
+    color: #9095a7;
+    text-align: center;
+    grid-area: copyright;
+  }
+  .footer .footer___content_area .content_area__block:last-of-type .footer__copy {
     font-size: 0.9rem;
   }
 }

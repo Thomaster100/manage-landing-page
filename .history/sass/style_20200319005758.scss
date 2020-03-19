@@ -852,7 +852,7 @@ $max-wrapper: 960px;
             grid-template-areas:
             "logo-and-social-icons nav-items-1 nav-items-2 newsletter"
             ". . . copyright";
-            grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
             grid-gap: 1rem;
 
             .content_area__block {

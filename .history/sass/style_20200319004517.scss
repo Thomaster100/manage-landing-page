@@ -511,7 +511,7 @@ $max-wrapper: 960px;
 
                         &::placeholder  {
                             font-size: 0.8rem;
-                            padding-left: 5rem;
+                            padding-left: 0.5rem;
                         }
                     }
 
@@ -531,10 +531,6 @@ $max-wrapper: 960px;
                     color: $dark-grayish-blue;
                     text-align: center;
                     grid-area: copyright;
-
-                    .footer__copy {
-                        font-size: 1rem;
-                    }
                 }
 
                 .nav__footer_item {
@@ -863,7 +859,7 @@ $max-wrapper: 960px;
 
                     .footer__logo {
                         height: auto;
-                        margin: 0 auto;
+                        margin: 2rem auto;
                         padding: 0.5rem;
                         background-color: #fff;
                     }
@@ -872,8 +868,6 @@ $max-wrapper: 960px;
                 .container__social_icons {
                     display: flex;
                     justify-content: center;
-                    position: relative;
-                    top: 6.6rem;
                     .social_ico {
                         width: 6rem;
                         height: auto;
@@ -914,10 +908,6 @@ $max-wrapper: 960px;
                     color: $dark-grayish-blue;
                     text-align: center;
                     grid-area: copyright;
-                    
-                    .footer__copy {
-                        font-size: 0.9rem;
-                    }
                 }
 
             }
