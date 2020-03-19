@@ -537,15 +537,14 @@ $max-wrapper: 960px;
 						padding-left: 0.5rem;
 					}
 
-					&:not(:active) {
-
-						border: 2px solid transparent;
+					&:not(:focus) {
+					   border: 2px solid transparent;
 
 						&:invalid {
 							border: 2px solid red;
 						}
 					}
-
+					
 					&:focus {
 						&:invalid {
 							border: 2px solid red;
@@ -910,7 +909,7 @@ $max-wrapper: 960px;
 					display: -ms-flexbox;
 					display: flex;
 					-ms-flex-pack: distribute;
-					justify-content: space-around;
+					    justify-content: space-around;
 					grid-area: newsletter;
 
 					// NEWSLETTER

@@ -544,8 +544,21 @@ $max-wrapper: 960px;
 						&:invalid {
 							border: 2px solid red;
 						}
+						
+						&:valid {
+							border: 2px solid green;
+						}
 					}
 
+					// &:not(:focus) {
+					// 	&:valid {
+					// 		border: 2px solid green;
+					// 	}
+					// 	&:invalid {
+					// 		border: 2px solid red;
+					// 	}
+					// }
+					
 					&:focus {
 						&:invalid {
 							border: 2px solid red;

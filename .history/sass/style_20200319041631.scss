@@ -537,15 +537,18 @@ $max-wrapper: 960px;
 						padding-left: 0.5rem;
 					}
 
-					&:not(:active) {
-
-						border: 2px solid transparent;
+					&:not(:focus) {
+					   border: 2px solid transparent;
 
 						&:invalid {
 							border: 2px solid red;
 						}
-					}
 
+						&:valid {
+							border: 2px solid green;
+						}
+					}
+					
 					&:focus {
 						&:invalid {
 							border: 2px solid red;

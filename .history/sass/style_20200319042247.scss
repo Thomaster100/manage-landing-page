@@ -540,12 +540,25 @@ $max-wrapper: 960px;
 					&:not(:active) {
 
 						border: 2px solid transparent;
+					   
+					   &:valid {
+						border: 2px solid green;
+					}
 
 						&:invalid {
 							border: 2px solid red;
 						}
 					}
 
+					// &:not(:focus) {
+					// 	&:valid {
+					// 		border: 2px solid green;
+					// 	}
+					// 	&:invalid {
+					// 		border: 2px solid red;
+					// 	}
+					// }
+					
 					&:focus {
 						&:invalid {
 							border: 2px solid red;
