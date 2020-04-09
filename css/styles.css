@@ -439,8 +439,9 @@
   justify-content: center;
 }
 .footer .footer___content_area .content_area__block:first-of-type .container__social_icons .social_ico {
-  width: 100%;
+  width: 3rem;
   height: auto;
+  margin: 0 0.5rem;
   cursor: pointer;
 }
 .footer .footer___content_area .content_area__block .nav__footer_item:hover {
