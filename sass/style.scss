@@ -900,6 +900,9 @@ $max-wrapper: 960px;
 
 					.cta_red {
 						height: 2.5rem;
+						display: flex;
+						justify-content: center;
+						align-items: center;
 						box-shadow: none;
 					}
 				}
