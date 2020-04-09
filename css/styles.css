@@ -820,12 +820,12 @@
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
-    top: 6.6rem;
+    bottom: 1.5rem;
+    top: 5.9rem;
   }
   .footer .footer___content_area .content_area__block:first-of-type .container__social_icons .social_ico {
     width: 6rem;
     height: auto;
-    padding: 0 1rem;
     cursor: pointer;
   }
   .footer .footer___content_area .content_area__block:nth-of-type(4) {
