@@ -441,7 +441,6 @@
 .footer .footer___content_area .content_area__block:first-of-type .container__social_icons .social_ico {
   width: 100%;
   height: auto;
-  padding: 0 1rem;
   cursor: pointer;
 }
 .footer .footer___content_area .content_area__block .nav__footer_item:hover {
@@ -482,18 +481,26 @@
   outline: none;
 }
 .footer .footer___content_area .content_area__block:nth-of-type(4) input::-webkit-input-placeholder {
+  position: relative;
+  bottom: 0.1rem;
   font-size: 0.8rem;
   padding-left: 0.5rem;
 }
 .footer .footer___content_area .content_area__block:nth-of-type(4) input::-moz-placeholder {
+  position: relative;
+  bottom: 0.1rem;
   font-size: 0.8rem;
   padding-left: 0.5rem;
 }
 .footer .footer___content_area .content_area__block:nth-of-type(4) input:-ms-input-placeholder {
+  position: relative;
+  bottom: 0.2rem;
   font-size: 0.8rem;
   padding-left: 0.5rem;
 }
 .footer .footer___content_area .content_area__block:nth-of-type(4) input::placeholder {
+  position: relative;
+  bottom: 0.1rem;
   font-size: 0.8rem;
   padding-left: 0.5rem;
 }

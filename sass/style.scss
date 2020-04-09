@@ -469,7 +469,7 @@ $max-wrapper: 960px;
 					.social_ico {
 						width: 100%;
 						height: auto;
-						padding: 0 1rem;
+						// padding: 0 1rem;
 						cursor: pointer;
 					}
 				}
@@ -521,18 +521,26 @@ $max-wrapper: 960px;
 					border-radius: 20px;
 					outline: none;
 					&::-webkit-input-placeholder {
+						position: relative;
+						bottom: 0.1rem;
 						font-size: 0.8rem;
 						padding-left: 0.5rem;
 					}
 					&::-moz-placeholder {
+						position: relative;
+						bottom: 0.1rem;
 						font-size: 0.8rem;
 						padding-left: 0.5rem;
 					}
 					&:-ms-input-placeholder {
+						position: relative;
+						bottom: 0.2rem;
 						font-size: 0.8rem;
 						padding-left: 0.5rem;
 					}
 					&::placeholder {
+						position: relative;
+						bottom: 0.1rem;
 						font-size: 0.8rem;
 						padding-left: 0.5rem;
 					}
